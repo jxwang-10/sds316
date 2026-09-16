@@ -1,0 +1,688 @@
+[
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "This schedule is a work in progress, so please check it frequently to make sure you know what the next reading is!"
+  },
+  {
+    "objectID": "schedule.html#week-2",
+    "href": "schedule.html#week-2",
+    "title": "Schedule",
+    "section": "Week 2",
+    "text": "Week 2\nWeek of Sept 14\n\nBy W2.C1:\n\n(skim) Selections from National Academies of Sciences, Engineering, and Medicine. 2016. Modernizing Crime Statistics: Report 1: Defining and Classifying Crime. Washington, DC: The National Academies Press. https://www.nationalacademies.org/projects/DBASSE-CNSTAT-13-05 .\nJohnson, K. R. (2021). Two Regimes of Prison Data Collection. Harvard Data Science Review, 3(3). https://doi.org/10.1162/99608f92.72825001\n\nSign up for a discussion leader and tech skills slots on the assignments page which has a link to the Class Leader Schedule\nBy W2.C2:\n\nInstall everything you need for the tech stack. Come to office hours if you’re struggling.\nReview the information you’ve received about git in previous classes and come prepared to discuss what git does and why we use it."
+  },
+  {
+    "objectID": "schedule.html#week-3",
+    "href": "schedule.html#week-3",
+    "title": "Schedule",
+    "section": "Week 3",
+    "text": "Week 3\nWeek of Sept 21\n\nBy W2.C1:\n\nRead Chapters 1 and 2 of Predict and Surveil. Bring your book to class.\n\nBy W2.C2:\n\nHave a first draft of research questions ready to discuss\nBranch with the start of your project created\nHave (or have set a date for) meeting with your research cluster"
+  },
+  {
+    "objectID": "schedule.html#week-4",
+    "href": "schedule.html#week-4",
+    "title": "Schedule",
+    "section": "Week 4",
+    "text": "Week 4\nWeek of Sept 28\n\nBy W3.C1\n\nRead Chapters 3 of Predict and Surveil. Bring your book to class.\n\nBy W2.C2\n\nStage 1 of research project DUE. This class will be a partly open work session to troubleshoot the submission of this first part of the project.\n\n\nThe schedule is still in progress, but note that all research project and midterm/final dates are listed on the assignments page."
+  },
+  {
+    "objectID": "lectures/template-seminar.html#todays-agenda",
+    "href": "lectures/template-seminar.html#todays-agenda",
+    "title": "SEMINAR TEMPLATE",
+    "section": "Today’s Agenda",
+    "text": "Today’s Agenda"
+  },
+  {
+    "objectID": "lectures/template-seminar.html#new-slides-start-with-h2-tags",
+    "href": "lectures/template-seminar.html#new-slides-start-with-h2-tags",
+    "title": "SEMINAR TEMPLATE",
+    "section": "New slides start with H2 tags",
+    "text": "New slides start with H2 tags\nCreate 1 slide with\nA link to a piece of inside-written (or other authors who are system-impacted) journalism or reporting about something related to the reading, the coursework, or your particular research project. We do this because it’s important to listen to people who have directly experienced the criminal legal system.\nA link to a current news article related to the topic.\n1 - 2 sentences about how these are related to the day’s topics"
+  },
+  {
+    "objectID": "lectures/template-seminar.html#reading",
+    "href": "lectures/template-seminar.html#reading",
+    "title": "SEMINAR TEMPLATE",
+    "section": "Reading",
+    "text": "Reading\nCreate 2 slides with an overview of the main points of the reading. ## Main Points"
+  },
+  {
+    "objectID": "lectures/template-seminar.html#questions",
+    "href": "lectures/template-seminar.html#questions",
+    "title": "SEMINAR TEMPLATE",
+    "section": "Questions?",
+    "text": "Questions?\nCreate 1 slide with discussion questions.\nGood questions are: - open ended and not answerable with facts - contain any necessary context (e.g. a quote, or a page number)"
+  },
+  {
+    "objectID": "lectures/template-seminar.html#key-takeaways",
+    "href": "lectures/template-seminar.html#key-takeaways",
+    "title": "SEMINAR TEMPLATE",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n1 2 3"
+  },
+  {
+    "objectID": "lectures/template-seminar.html#reflection",
+    "href": "lectures/template-seminar.html#reflection",
+    "title": "SEMINAR TEMPLATE",
+    "section": "Reflection",
+    "text": "Reflection\n\nWhat’s new information?\nHow does this change how we think about our practice?\nHow does ths impact our research question?"
+  },
+  {
+    "objectID": "lectures/template-seminar.html#checkout",
+    "href": "lectures/template-seminar.html#checkout",
+    "title": "SEMINAR TEMPLATE",
+    "section": "Checkout",
+    "text": "Checkout\nOn a sheet of paper, write your name and then:"
+  },
+  {
+    "objectID": "lectures/week2-c1.html#todays-agenda",
+    "href": "lectures/week2-c1.html#todays-agenda",
+    "title": "Week 2, Class 1",
+    "section": "Today’s Agenda",
+    "text": "Today’s Agenda\nIn this session, we will cover:\n\nCrime data!\nJohnson - 2 regimes\nDiscussion Leader Time (Nikko)"
+  },
+  {
+    "objectID": "lectures/week2-c1.html#crime",
+    "href": "lectures/week2-c1.html#crime",
+    "title": "Week 2, Class 1",
+    "section": "Crime",
+    "text": "Crime"
+  },
+  {
+    "objectID": "lectures/week2-c1.html#what-is-a-crime",
+    "href": "lectures/week2-c1.html#what-is-a-crime",
+    "title": "Week 2, Class 1",
+    "section": "What is a crime?",
+    "text": "What is a crime?\n\nAnything that is against the law.\nCrime is a social construct\nA social construct: anything that we collectively agree on\nWhat used to be a crime but isn’t now? / What is now a crime that wasn’t before?\n\n1954 - Brown v Board\n1967 - Loving v Virginia\n1973 - Roe v Wade"
+  },
+  {
+    "objectID": "lectures/week2-c1.html#when-someone-is-arrested-for-a-crime",
+    "href": "lectures/week2-c1.html#when-someone-is-arrested-for-a-crime",
+    "title": "Week 2, Class 1",
+    "section": "When someone is arrested for a crime",
+    "text": "When someone is arrested for a crime\n\nSome jurisdictions collect DNA upon arrest\nData is entered into criminal justice information systems (federal record)\nYou can see operations manuals for some systems\nIllinois\nNew York\nUCR Book"
+  },
+  {
+    "objectID": "lectures/week2-c1.html#links",
+    "href": "lectures/week2-c1.html#links",
+    "title": "Week 2, Class 1",
+    "section": "Links",
+    "text": "Links\nThe Angolite’s study of longest-serving inmates\nSome prisons are using biometrics to track & monitor incarcerated people\nData collected by incarcerated people (eg The Angolite) consistently tells a different story than data collected by those on the outside. (more about The Angolite)"
+  },
+  {
+    "objectID": "lectures/week2-c1.html#section",
+    "href": "lectures/week2-c1.html#section",
+    "title": "Week 2, Class 1",
+    "section": "",
+    "text": "(screenshot from Johnson article)"
+  },
+  {
+    "objectID": "lectures/week2-c1.html#section-1",
+    "href": "lectures/week2-c1.html#section-1",
+    "title": "Week 2, Class 1",
+    "section": "",
+    "text": "“State prison data is primarily concerned with counting and painting a picture of who occupies a system; what they did, what they look like, and what are some select individual behaviors. It rests on an assumption that everything is best known from afar —especially by those who receive training from Western universities, whose job it is to produce ‘valid’ knowledge (Mignolo, 2011), whereas community data collection grapples with the experience of living within the prison, the conditions that are faced, institutional failures, and the ripple effect of prisons on the wider community” (Johnson, 2021, p. 2) (pdf)"
+  },
+  {
+    "objectID": "lectures/week2-c1.html#section-2",
+    "href": "lectures/week2-c1.html#section-2",
+    "title": "Week 2, Class 1",
+    "section": "",
+    "text": "“What might our research, policies, and understanding of the world look like if we move from a belief that the trajectory of a person’s life after prison is not determined by the years of formal education they have received, but whether they lived for years in a system that did not give them access to direct sunlight?” (Johnson, 2021, p. 11) (pdf)"
+  },
+  {
+    "objectID": "lectures/week2-c1.html#questions",
+    "href": "lectures/week2-c1.html#questions",
+    "title": "Week 2, Class 1",
+    "section": "Questions?",
+    "text": "Questions?\n\nWhy do you think some questions are consisent across censuses? what impact do you think the proposed changes might have?\nHow does Johnson frame the differences between the Angolite/National Campaign to Stop Control Unit Prisons surveys and the state-run surveys?\nHow do you understand the National Acadamies meetings & reports now that you’ve read the Johnson piece? aka - how do we think about crime statistics?"
+  },
+  {
+    "objectID": "lectures/week2-c1.html#exercise",
+    "href": "lectures/week2-c1.html#exercise",
+    "title": "Week 2, Class 1",
+    "section": "Exercise",
+    "text": "Exercise\nSkim this 19th article about a new HHS study."
+  },
+  {
+    "objectID": "lectures/week2-c1.html#checkout",
+    "href": "lectures/week2-c1.html#checkout",
+    "title": "Week 2, Class 1",
+    "section": "Checkout",
+    "text": "Checkout\nOn a sheet of paper, write your name and then…\nWrite 1 research question (draft!!)\nHow has your thinking changed since this conversation? (how do you want your data to have been collected?)"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Prerequisites: SDS 270 or SDS 271 or CSC 210 or CSC/SDS 235 or by permission of the instructor\nMeetings: Monday & Wednesday || 7:00 - 8:15pm || Bass 002\n💡 Office hours, booking non-office hour time, etc You can also catch me for about 20 minutes after class on Wednesdays.\n\n\nThe United States criminal legal system is increasingly data-driven. Technologies like recidivism algorithms and predictive policing give the appearance of numerical objectivity. But, without sufficient context, we cannot understand how these technologies work or the data that they are using. This course introduces students to the theory and practice of handling data about the United States criminal legal system. Students will engage with this material through in-depth reading about the history of crime, policing, and incarceration; seminar discussions; research design; and large data-driven projects.\n\n\n\nAfter completing this course, students will be able to:\n\nIdentify ethical concerns in the development and implementation of data-driven systems, specifically in the context of the criminal legal system\n\nIdentify the phases of the US criminal legal system, and several data-centric challenges within each\n\nDesign and execute a data-centered research project about the criminal legal system\n\nImplement a data-driven dashboard to showcase their findings\n\nConvey quantitative information in written, oral and graphical forms of communication to both technical and nontechnical audiences (an SDS learning objective)"
+  },
+  {
+    "objectID": "syllabus.html#course-information",
+    "href": "syllabus.html#course-information",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Prerequisites: SDS 270 or SDS 271 or CSC 210 or CSC/SDS 235 or by permission of the instructor\nMeetings: Monday & Wednesday || 7:00 - 8:15pm || Bass 002\n💡 Office hours, booking non-office hour time, etc You can also catch me for about 20 minutes after class on Wednesdays.\n\n\nThe United States criminal legal system is increasingly data-driven. Technologies like recidivism algorithms and predictive policing give the appearance of numerical objectivity. But, without sufficient context, we cannot understand how these technologies work or the data that they are using. This course introduces students to the theory and practice of handling data about the United States criminal legal system. Students will engage with this material through in-depth reading about the history of crime, policing, and incarceration; seminar discussions; research design; and large data-driven projects.\n\n\n\nAfter completing this course, students will be able to:\n\nIdentify ethical concerns in the development and implementation of data-driven systems, specifically in the context of the criminal legal system\n\nIdentify the phases of the US criminal legal system, and several data-centric challenges within each\n\nDesign and execute a data-centered research project about the criminal legal system\n\nImplement a data-driven dashboard to showcase their findings\n\nConvey quantitative information in written, oral and graphical forms of communication to both technical and nontechnical audiences (an SDS learning objective)"
+  },
+  {
+    "objectID": "syllabus.html#course-materials",
+    "href": "syllabus.html#course-materials",
+    "title": "Syllabus",
+    "section": "Course Materials",
+    "text": "Course Materials\n\nRequired Reading\nYou will be required to purchase two books. Other assigned readings will be provided on this website.\n\nBrayne, S. (2021). Predict and Surveil: Data, Discretion, and the Future of Policing. Oxford University Press.\nJefferson, B. (2020). Digitize and punish: Racial criminalization in the digital age. U of Minnesota Press.\n\n\n\nUseful Reference\nThese are not required, but you might find these useful:\n\nPython Data Science Handbook\nPython for Data Analysis\nPython Reference Guide\nPrison Policy Initiative’s Guide to Writing about the Criminal Legal System (and other complex topics)"
+  },
+  {
+    "objectID": "syllabus.html#participation-and-classroom-expectations",
+    "href": "syllabus.html#participation-and-classroom-expectations",
+    "title": "Syllabus",
+    "section": "Participation and Classroom Expectations",
+    "text": "Participation and Classroom Expectations\nWhen we have classroom discussions, we’ll be covering material that may have impacted our lives or our communities. It is impossible to separate our lived experience from our academic work, and indeed our expertise and knowledge lies within our experiences. That’s an academic way of saying – bring your whole self to class with you because it’s who you are and because it makes you a better student and researcher. When everyone is bringing their whole selves to class, there is likely to be disagreement, conflict, or at least some discomfort. During the first week of class, we’ll set some norms together that work for our group.\nI expect that you will come to class prepared to participate, and willing to participate in ways that are both familiar and unfamiliar to you.\n\nNames and Personal Pronouns\nI affirm all forms of gender expression and identities. If you prefer to be called a different name than what is on the class roster, please let me know. Feel free to correct me on your gender pronoun, if you don’t use any pronouns, or if your pronouns change during the semester. If you have any questions or concerns about being addressed respectfully, please do not hesitate to contact me. For more information, see Smith’s page about gender identity and expression.\n\n\nTime Commitment and Labor Expectations\nThis course requires a weekly time commitment. On an average week, you’ll spend about 10-12 hours total on this course (this is also a federal requirement for universities!). In a typical week, you’ll spend 2.5 in class, about 3 hours doing reading, and an average of 4-6 hours working on class projects. The distribution of this time will shift over the course of the semester with some weeks having mostly reading work and others having mostly hands-on development work.\n\n\nOffice Hours\nMy office hours are listed in the document linked from the syllabus, and I strongly encourage each of you to use them. Studies have shown (e.g. Henry, 2014) that some students do not take advantage of office hours or are otherwise afraid to “bother” faculty. When I was an undergraduate student, the first in my family to go to college, I never went to office hours and I really missed out. This paragraph is my formal invitation to you to come to as many office hours as are helpful to you. Holding these hours is a literal part of my job – and I like my job – so please use all of the resources available to you, including my office hours."
+  },
+  {
+    "objectID": "syllabus.html#grading-schedule",
+    "href": "syllabus.html#grading-schedule",
+    "title": "Syllabus",
+    "section": "Grading & Schedule",
+    "text": "Grading & Schedule\nYour final grade will be determined by a combination of:\n\nClass Summary Sheets - 15%\n\nLeading class and/or leading small group discussions - 15%\n\nResearch project (and its component parts) - 50%\n\nMidterm evaluation - 10%\n\nFinal presentation - 10%\n\nFor more details about each component, please see Assignments Overview\n\nFinal Project\nThis course satisfies the application domain requirement for the SDS major. As such, students will complete a large, independent data analysis project. In the first third of the class, students will dive into the history and theory of the criminal legal system, develop data-centric research questions, and construct their research approach. In the middle-third, students will wrangle (clean, normalize, model, etc) data. In the final third, students will build, refine, and present a dashboard of their results.\nSee the full breakdown (in progress) on the Schedule page"
+  },
+  {
+    "objectID": "syllabus.html#course-policies",
+    "href": "syllabus.html#course-policies",
+    "title": "Syllabus",
+    "section": "Course Policies",
+    "text": "Course Policies\n\nCode of Conduct and Interpersonal Safety\nIt is important to me to create a classroom environment where everyone can be successful. We will work together to develop a classroom code of conduct that works for the group that we will become this semester, and we will check in about it regularly. At a minimum, this code of conduct will include:\n\nrespecting and affirming the identities and lived experiences of everyone in the classroom\n\nmoving slowly when difficult content is presented\n\nduring disagreements, disagreeing with the idea and not the person\n\nassuming positive intent when someone makes a mistake\n\nhonoring those who speak up about something that doesn’t feel good\n\nThis class has an unconditional timeout policy, which means that any person can call a time out for any reason. When someone calls a time out, we will thank them for being brave enough to assert their needs. My commitment to you is that I will:\n\nwork to acknowledge structural and interpersonal power imbalances\nbelieve your accounts of your life and experiences\ninterrupt any harassing behavior\n\nIf you have any concerns or suggestions for how to make this class more inclusive, please reach out to me. If you’d rather do it anonymously, please leave a note in my faculty mailbox in Burton Hall.\n\n\nAttendance\nYou are an adult and you can choose whether or not to attend class. Except in exceptional circumstances, I don’t provide summaries of missed material for students who miss class; students who miss class will need to get course materials from a classmate.\nIf you are sick, please don’t come to class! In general, the SDS department has a no-remote-attendance policy. However, we live in community here, and staying home from class when you’re sick is a way of caring for your Smith community. In these cases, you are welcome to contact a classmate to zoom you into class. I will not set up zoom for you when you are sick. Students should reach out to their class dean in the event of an extended illness or emergency; they can help you to navigate these situations with your instructors. Consistent with the college’s policy on student academic standing, if you miss more than four weeks of class meetings, you are in danger of failing to earn credit for this course (receiving a grade of E).\n\n\nElectronic Devices\nThis course combines seminar-style discussion and hands-on technical work.\nDuring seminar conversations, I ask that you close your laptops, put away your phones and participate in class discussion. Of course, there may be times when you need to take a call or send a message. In these cases, please step out of class to do so – do not use your device under the table, out of respect for your classmates. The is no exception to this policy other than an ARC accommodation.\nDuring lab work, I expect you to come to class with a working development environment – there will not be time to troubleshoot your machine in class. If you need help, please come to office hours.\n\n\nAI Policy\nThis Fall 2026 edition of the class will have a pedagogical partner who will join us to think about if and how we use AI in this class. The policy is one we will develop together. However, there are some guideliness that will hold regardless of the outcome of that partnership:\n\nyou may not use AI to generate ideas. AI is not an idea generation machine, it is a probablistic language predictor. As a result, any idea that AI generates is one that many people have had before.\n\nyou may not use AI to generate writing or to edit/proofread something that you wrote. I would rather read your worst writing on your worst day than a single sentence generated by AI. Communicating complex ideas of the key skills that we practice in this class and AI cannot help you develop that skill, unfortunately."
+  },
+  {
+    "objectID": "syllabus.html#smith-college-policies",
+    "href": "syllabus.html#smith-college-policies",
+    "title": "Syllabus",
+    "section": "Smith College Policies",
+    "text": "Smith College Policies\n\nAccommodations\nSmith is committed to providing support services and reasonable accommodations to all students with disabilities. To request an accommodation, please register with the Accessibility Research Center (ARC) at the beginning of the semester. To contact ARC, please email arc@smith.edu\n\n\nAcademic Integrity\nIt should go without saying that this course is one in which we do not cheat, plagiarize or otherwise act without academic integrity. This includes adhering to this course’s AI Policy.\n\n\nRecording\nUnless specific accommodations are requested, there will be no recording of class lecture or class discussion. This class relies on collectively creating spaces where we are free to discuss difficult subjects, and to stumble through hard topics as part of learning. Having our best, sometimes fumbling, efforts recorded for posterity is the opposite of the class environment that we need. For more information, please refer to the college policy on recording."
+  },
+  {
+    "objectID": "syllabus.html#additional-resources",
+    "href": "syllabus.html#additional-resources",
+    "title": "Syllabus",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nStats & CS Tutoring\nIf you are struggling with any quantitative/computational part of the course, I strongly encourage you to use the Spinelli Center’s Tutoring Hours. If you’ve been before and had a negative experience, please try again or come to my office hours to strategize how to connect you with more outside-of-class support.\n\n\nWriting\nIf you need support with writing, please use the Jacobson Center for Writing.\n\n\nMental Health\nIn addition to challenging themes that we will discuss in this class, being a student can be both a time of exciting learning and also intense stress. If you need mental health support, please take advantage of the Wellness resources provided by Smith."
+  },
+  {
+    "objectID": "class-log.html",
+    "href": "class-log.html",
+    "title": "Class Log",
+    "section": "",
+    "text": "List of questions in no particular order:\n\nHow has the prison industrial complex system contributed to the “death” of the American dream?\nRico, how effective is this?\nHow are cases handled or processed in criminal court?\nAverage waiting trial period?\nHow are people prioritized in the queue?\nCan records be expunged? Basically, what does due process look like, and how does it play out?\nI’ve been in a lot of classes that discuss the surveillance state and the panopticon Foucault, so I want to learn more about it in the context of real data. What does this look like in practice?\nWhat about the EJI, the Equal Justice Initiative?\nHow is organized crime treated differently in the U.S. legal system?\nHow is blackness treated in the U.S. legal system?\nWhere do human disasters like plane crashes, cyber attacks, factory explosions, and chemical spills fit into the system?\nWhat are some resistances against surveillance, like face paint or body coverings?\nI want to learn more about how race maps onto arrests and prison data as a national pattern or trend. How is this an inherent part of the prison industrial complex related to racial capitalism.\nIn regarding holding patterns, what are the differences between prisons and jails?\nAre there biases involved in holding procedures for prisoners based on identity?\nHow do we think about data workers training AI models and their work contracts and the context that they see.\nWhy are non-violent offenders sentenced to long prison sentences?\nHow do we think about the identity of victims and perpetrators.\nWhat about recidivism?\nWhat about prison abolition?\nWhat about recidivism?\nWhat about search for and disposal of evidence?\nHow are public and private prisons different?\nWhat is political polarization in the legal system? Are there geographical differences?\nWhere does redlining fit in?\nWhat are urban versus rural legal and criminal conditions?\nHow does healthcare work within the criminal system?\nWhat about the school-to-prison pipeline?\nWhat about victim desires in terms of sentencing?\nHow do they keep track of people?\nDo people’s files ever get lost?\nHow do we think about the concept of being able to pay for better lawyers or attorneys?\nHow do state laws about what’s legal or not legal disseminate?\nWhat is pretty privilege in mugshots?\nPolice presence in neighborhoods?\nHow are people disabling flock cameras and surveillance?\nWhat is trans healthcare in prison?\nHow do guards get jobs? Why do they go along with treating prisoners poorly?\nWhat about Scandinavian or alternative approaches to punishment?\nWhat happens when people leave the system? How can this transition be made easier?\nTo what extent does media perception affect convictions?\nWhy can you charge children as adults? Who decides that?\nWhat is the prison system’s relationship to the foster care system.\nHow do mothers in prison get custody back?\nWhat is sentencing in the South versus the North?\nWho is Brian Stevenson, the criminal justice lawyer?\nWhat about risk assessments and using technology to determine if someone will commit crimes again.\nWhat about prisons and small towns?\nWhat about white collar crimes?\nWhat about the public perception of prisons and perceptions of prisons’ purpose?\nWhat happens to immigrants or people on visas or work study after they are accused of a crime.\nWhat happens to people who are wrongly accused of crime and convicted, but exonerated out years later? Do they still have a record on file?\nTo what extent does public opinion on social media affect how someone gets executed, good or bad?\nHow does the U.S. legal system handle foreign criminals in the U.S.\nWhat about the internal prison economy?\nWhat about people charged with sex crimes?\nAre they releasing people with old marijuana convictions?\nWhat about gender nonconforming and transphobic violence? I feel like there’s not enough clarity and information.\nHow do we think about AI tech companies and user harm, like chatbots and suicide?\nHow does artificial intelligence change the U.S. criminal justice system?\nWhat about enslavement to the prison-industrial complex pipeline?\nHow do long-term cases get traced and changed depending on law changes?\nWhat about solitary confinement?\nWhat are the differences between women’s and men’s rights and Protection differences.\nWho and how decides if an offender is juvenile?\nWho decides whether an offender deserves rehab and healing or punishment?\nWhat about the use of DNA evidence to reverse indictments?\nWhat about the concept of paying to get out of jail and the power of money.\nWhat about cannabis laws?\nWhat about the war on drugs?\nWhat about women in prison?\nWhat about politicians funding prisons?\nWho benefits the most from prison?\nWhat about politicians in support of prisons?\nWhat are the qualities of prison facilities?\nWhat about white women tears?\nWhat about surveillance body cameras and neighborhoods?\nWhat about mnematic warfare?\nWhat about low-income housing leading to low-income jobs leading to foster care, leading to prison, leading to racism"
+  },
+  {
+    "objectID": "class-log.html#sept-9",
+    "href": "class-log.html#sept-9",
+    "title": "Class Log",
+    "section": "",
+    "text": "List of questions in no particular order:\n\nHow has the prison industrial complex system contributed to the “death” of the American dream?\nRico, how effective is this?\nHow are cases handled or processed in criminal court?\nAverage waiting trial period?\nHow are people prioritized in the queue?\nCan records be expunged? Basically, what does due process look like, and how does it play out?\nI’ve been in a lot of classes that discuss the surveillance state and the panopticon Foucault, so I want to learn more about it in the context of real data. What does this look like in practice?\nWhat about the EJI, the Equal Justice Initiative?\nHow is organized crime treated differently in the U.S. legal system?\nHow is blackness treated in the U.S. legal system?\nWhere do human disasters like plane crashes, cyber attacks, factory explosions, and chemical spills fit into the system?\nWhat are some resistances against surveillance, like face paint or body coverings?\nI want to learn more about how race maps onto arrests and prison data as a national pattern or trend. How is this an inherent part of the prison industrial complex related to racial capitalism.\nIn regarding holding patterns, what are the differences between prisons and jails?\nAre there biases involved in holding procedures for prisoners based on identity?\nHow do we think about data workers training AI models and their work contracts and the context that they see.\nWhy are non-violent offenders sentenced to long prison sentences?\nHow do we think about the identity of victims and perpetrators.\nWhat about recidivism?\nWhat about prison abolition?\nWhat about recidivism?\nWhat about search for and disposal of evidence?\nHow are public and private prisons different?\nWhat is political polarization in the legal system? Are there geographical differences?\nWhere does redlining fit in?\nWhat are urban versus rural legal and criminal conditions?\nHow does healthcare work within the criminal system?\nWhat about the school-to-prison pipeline?\nWhat about victim desires in terms of sentencing?\nHow do they keep track of people?\nDo people’s files ever get lost?\nHow do we think about the concept of being able to pay for better lawyers or attorneys?\nHow do state laws about what’s legal or not legal disseminate?\nWhat is pretty privilege in mugshots?\nPolice presence in neighborhoods?\nHow are people disabling flock cameras and surveillance?\nWhat is trans healthcare in prison?\nHow do guards get jobs? Why do they go along with treating prisoners poorly?\nWhat about Scandinavian or alternative approaches to punishment?\nWhat happens when people leave the system? How can this transition be made easier?\nTo what extent does media perception affect convictions?\nWhy can you charge children as adults? Who decides that?\nWhat is the prison system’s relationship to the foster care system.\nHow do mothers in prison get custody back?\nWhat is sentencing in the South versus the North?\nWho is Brian Stevenson, the criminal justice lawyer?\nWhat about risk assessments and using technology to determine if someone will commit crimes again.\nWhat about prisons and small towns?\nWhat about white collar crimes?\nWhat about the public perception of prisons and perceptions of prisons’ purpose?\nWhat happens to immigrants or people on visas or work study after they are accused of a crime.\nWhat happens to people who are wrongly accused of crime and convicted, but exonerated out years later? Do they still have a record on file?\nTo what extent does public opinion on social media affect how someone gets executed, good or bad?\nHow does the U.S. legal system handle foreign criminals in the U.S.\nWhat about the internal prison economy?\nWhat about people charged with sex crimes?\nAre they releasing people with old marijuana convictions?\nWhat about gender nonconforming and transphobic violence? I feel like there’s not enough clarity and information.\nHow do we think about AI tech companies and user harm, like chatbots and suicide?\nHow does artificial intelligence change the U.S. criminal justice system?\nWhat about enslavement to the prison-industrial complex pipeline?\nHow do long-term cases get traced and changed depending on law changes?\nWhat about solitary confinement?\nWhat are the differences between women’s and men’s rights and Protection differences.\nWho and how decides if an offender is juvenile?\nWho decides whether an offender deserves rehab and healing or punishment?\nWhat about the use of DNA evidence to reverse indictments?\nWhat about the concept of paying to get out of jail and the power of money.\nWhat about cannabis laws?\nWhat about the war on drugs?\nWhat about women in prison?\nWhat about politicians funding prisons?\nWho benefits the most from prison?\nWhat about politicians in support of prisons?\nWhat are the qualities of prison facilities?\nWhat about white women tears?\nWhat about surveillance body cameras and neighborhoods?\nWhat about mnematic warfare?\nWhat about low-income housing leading to low-income jobs leading to foster care, leading to prison, leading to racism"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Homepage",
+    "section": "",
+    "text": "(source)"
+  },
+  {
+    "objectID": "projects/template/index.html",
+    "href": "projects/template/index.html",
+    "title": "Template Project",
+    "section": "",
+    "text": "Write about 100 - 150 words describing your project. This description will change over the semester, so each time you make a deliverable, you might need to update it. Each time, do your best to be accurate to the focus of the project as it is that that moment"
+  },
+  {
+    "objectID": "projects/template/index.html#project-overview",
+    "href": "projects/template/index.html#project-overview",
+    "title": "Template Project",
+    "section": "",
+    "text": "Write about 100 - 150 words describing your project. This description will change over the semester, so each time you make a deliverable, you might need to update it. Each time, do your best to be accurate to the focus of the project as it is that that moment"
+  },
+  {
+    "objectID": "projects/demo/stage2.html",
+    "href": "projects/demo/stage2.html",
+    "title": "Initial Questions",
+    "section": "",
+    "text": "Note\n\n\n\nThis example captures my own real, work-in-progress thinking about this dataset. I haven’t gone back and made any revisions. I am writing this page at the same time as I’m asking these questions. What is in this dataset? What kinds of questions might I want to ask as I drill down?\n\n\n\n\n\n\nThe dataset is Executions in the United States, 1608 - 2002: The Espy File. It is stored in the _data folder, and the entire set of downloaded files from ICPSR is in the folder ICPSR-08451. Below, you’ll see that I’m using inscrutable column names. They are labled in the file projects/demo/_data/ICPSR_08451/DS0001/08451-0001-Codebook.pdf\n\n\n\nMy initial research question is pretty vague – “Are there trends in the crimes for which people have been executed in the United States?” And if I’m being honest, this isn’t the right question for someone with both my disciplinary background and my technical skillset/interests. I’m more interested in how this dataset is shaped, and what I might learn from the kinds of values I’m seeing in it. (This is a more inductive approach.)\n\n\n\n\nI notice that there is a field that defines the sex of the person. What’s the gender breakdown within this dataset?\n\nimport pandas as pd\nfrom pyprojroot import here # this helps us navigate tricky path stuff between local runs and quarto builds\n\n# Load the data using here() with the path from the project root\nfile_path = here(\"projects/demo/_data/ICPSR_08451/DS0001/08451-0001-Data.tsv\")\ndf = pd.read_csv(file_path, sep='\\t')  # Remember!! use '\\t' for tab-separated (which this data is)\n\n# how many people executed were women? (where V19 = 2)\ncount_v19 = len(df[df['V19'] == '2']) # NOTE - this column is a varchar, so you need to put quotes around your integer. \n\n# total rows in dataset\ntotal_rows = len(df)\n\n# lil percent count\ngender_breakdown = count_v19 / total_rows * 100\n\nprint(\"Number of women: \", count_v19)\nprint(\"Total Rows \", total_rows)\nprint(f\"Percentage of women: \",  gender_breakdown)\n\nNumber of women:  364\nTotal Rows  15268\nPercentage of women:  2.384071260151952\n\n\nAt this point, I know that 364 women (2.38%) of all people executed in this dataset were women. Within those 364, what else can I learn?\n\n\n\n\n# Let's assign that subset to it's own data frame so that we can work just with it\nwomen = df[df['V19'] == '2']\n\n# What kinds of jobs (col V21) did these women have? \nmost_common_jobs = women['V21'].value_counts().head(10)\n\nprint(most_common_jobs)\n\nV21\n610    154\n       102\n328     51\n197     11\n593      8\n509      5\n440      4\n719      4\n327      3\n731      2\nName: count, dtype: int64\n\n\nOkay, whatever job is 610 is by far the most common, with “no occupation recorded” (NULL) the second most common. 328, a distant second, and 197 less than 3% (11 women). Let’s go to the Codebook and see what these jobs are.\ncode - occupation\n610 - Slave\n328 - Housewife\n197 - Domestic Servant\n593 - Servant\n509 - Prostitute\n440 - Nurse\n719 - Waitress\n327 - Housekeeper\n731 - Widow\n\n\n\n\n\n\nNote\n\n\n\nYIKES. I wasn’t expecting to see “Slave” as an occupation in this dataset. This makes sense with the broad history of the US - does it make “sense” within this dataset?\n\n\n\n\n\nBased on what we’re seeing here (and some browsing I’m doing in the explorer), it looks like the majority of women executed were executed during slavery in the United States. Let’s see what the median year in this dataset is - does this make sense?\n\nmedian_year = women['V14'].median()\nprint(median_year)\n\n1826.5\n\n\nOkay, the median year is 1826. (Remember, the 13th Amendment which constitutionally abolished slavery was in 1856) This validates the occupation data we’re seeing. Let’s also check if there was race (column V5) recorded. In the codebook, these are the values for race: 0 M Do Not Know; NA 1 White 2 Black 3 Native American 4 Asian-Pacific Il 5 Hispanic 6 Other\n\n# What was recorded for race? \nmost_common_race = women['V5'].value_counts().head(3)\n\nprint(most_common_race)\n\nV5\n2    198\n1    138\n      20\nName: count, dtype: int64\n\n\n\n\n\nOkay, this is still making sense. A few more general questions about women. Across all, what were their crimes?\n\nmost_common_crimes = women['V10'].value_counts().head(10)\n\nprint(most_common_crimes)\n\nV10\n1     225\n9      26\n16     20\n10     20\n       18\n33     12\n40      8\n6       7\n8       5\n36      5\nName: count, dtype: int64\n\n\ncode - crime\n1 - Murder\n9 - Witchcraft\n16 - Arson\n10 - Robbery-Murder\n33 - Poisoning\n40 - Attempted Murder\n6 - Conspiracy to Murder\n8 - Slave revolt\n36 - Unspecified Felony\n\n\nWoof. Okay. This also makes sense. All of this is part of finding one’s way around the dataset. I am expecting that the women executed for witchcraft were white (based on Hollywood movies about witch trials)\n\n# reminder, crime V10, race V5\n# we are asking slightly more complicated questions now\n# of the women where V10 = 9 (witchcraft), what were their races?\n\nrace_of_witches = women[women['V10']==\"9\"][\"V5\"].value_counts().head(3)\nprint(race_of_witches) # or rather, women convicted of witchcraft\n\nV5\n1    26\nName: count, dtype: int64\n\n\n\n\n\nWe’re seeing data that matches historical expectations (though we must always be careful when making these!). Women executed for witchcraft were exclusively white in the dataset. I would similarly expect women convicted of “Slave Revolt” to be Black. Does this track?\n\n# reminder, crime V10, race V5\n# we are asking slightly more complicated questions now\n# of the women where V10 = 8 (slave revolt), what were their races?\n\nrace_of_revolters = women[women['V10']==\"8\"][\"V5\"].value_counts().head(3)\nprint(race_of_revolters) # or rather, women convicted of 'slave revolt'\n\nV5\n1    4\n2    1\nName: count, dtype: int64\n\n\nSurprise! That is also majority white women (4 to 1). Who were these women?\n\n\n\n# (NOTE, you could do this in the explorer, but then it wouldn't be permanent. This helps us revisit this data any time as we keep thinking through our questions)\n\n# the 5 women convicted and executed for 'slave revolt'\nrevolters = women[women['V10']=='8']\n\n# let's make printing easier/prettier and grab just the columns we need\n# V7 = name, V6 = age, V5 = race, V11 = method of ex, V14 year, V16 state\n\npretty_table = revolters[['V7', 'V6', 'V5', 'V11', 'V14', 'V16']].copy()\npretty_table.columns = ['Name', 'Age', 'Race', 'Method', 'Ex Year', 'State']\n\npretty_table\n\n\n\n\n\n\n\n\nName\nAge\nRace\nMethod\nEx Year\nState\n\n\n\n\n4822\n\n\n2\n1\n1730\n22\n\n\n7505\nABIGAIL (VANINBURGH)\n\n1\n1\n1712\n36\n\n\n7506\nSARAH (PELS)\n\n1\n1\n1712\n36\n\n\n7539\nKERRY MARGARET\n\n1\n1\n1741\n36\n\n\n7541\nHUGHSON SARAH\n\n1\n1\n1741\n36\n\n\n\n\n\n\n\n\n\n\n\n\nOkay, something happened in 1741 with Margaret Kerry and SArah Hughson (I’m guessing). A quick web search of these two names reveals (1) A website called “executedtoday.com” (grim), with details of this situation. It was apparently part of the “New York Slave Rebellion of 1741” (Brittanica Entry)\nIf this dataset is complete, I would expect to see a lot of people executed in New York (state == 36) in 1741. The Brittanica entry reads “As a result of the rumors, false confessions, and finger-pointing, approximately 30 Black people and 4 white people (the Hughsons, Kerry, and Ury) were executed, and some 80 more people, mostly Black but some white, were exiled.” Does the dataset have this data?\n\n\n\n# we're going back to the entire dataset now and checking on the year 1741\nrevolters = df[df['V14'] == 1741]\n\nprint(\"Total Executions in 1741\", len(revolters))\n\nTotal Executions in 1741 43\n\n\nThis is close. What about in New York State?\n\n# we're going back to the entire dataset now and checking on the year 1741\nrevolters = df[df['V14'] == 1741]['V16']\n\nprint(\"Top 3 states with executions in 1741\", revolters.value_counts().head(3))\n\nTop 3 states with executions in 1741 V16\n36    34\n34     2\n45     2\nName: count, dtype: int64\n\n\nOkaaaay! I’m not sure if this is the focus I want to pursue for the next phase, but this data seems to line up really tidily with this historical account. I wasn’t expecting to find any of this when I grabbed this dataset, but this feels like a fine stopping point for this line of inquiry. Let’s put names to these folks, too, and then take a step back for another set of questions.\n\n\n\n\n# filter for year of execution (V14) and state of execution (V16)\nny_revolters = df[(df['V14'] == 1741) & (df['V16'] == 36)]\n\npretty_table = ny_revolters[['V7', 'V6', 'V5', 'V11', 'V14', 'V16']].copy()\npretty_table.columns = ['Name', 'Age', 'Race', 'Method', 'Ex Year', 'State']\n\npretty_table\n\n\n\n\n\n\n\n\nName\nAge\nRace\nMethod\nEx Year\nState\n\n\n\n\n7531\nTOM\n\n2\n\n1741\n36\n\n\n7532\nCOOK (COMFORT)\n\n2\n10\n1741\n36\n\n\n7533\nCAESAR (VAARCK)\n\n2\n1\n1741\n36\n\n\n7534\nPRINCE (ABOYNEAU)\n\n2\n1\n1741\n36\n\n\n7535\nCUFFEE (PHILIPSE)\n\n2\n10\n1741\n36\n\n\n7536\nQUACK (ROOSEVELT)\n\n2\n10\n1741\n36\n\n\n7537\nCUFFEE (GOMEZ)\n\n2\n10\n1741\n36\n\n\n7538\nCAESER (PECK)\n\n2\n10\n1741\n36\n\n\n7539\nKERRY MARGARET\n\n1\n1\n1741\n36\n\n\n7540\nHUGHSON JOHN\n\n1\n1\n1741\n36\n\n\n7541\nHUGHSON SARAH\n\n1\n1\n1741\n36\n\n\n7542\nALBANY (CARPENTER)\n\n2\n10\n1741\n36\n\n\n7543\nDICK CURACOA\n\n2\n10\n1741\n36\n\n\n7544\nFRANCIS (BOSCH)\n\n2\n10\n1741\n36\n\n\n7545\nBEN (MARSHALL)\n\n2\n10\n1741\n36\n\n\n7546\nCATO (COWLEY)\n\n2\n1\n1741\n36\n\n\n7547\nFORTUNE(VANDERSPIEGL)\n\n2\n1\n1741\n36\n\n\n7548\nQUASH (RUTGERS)\n\n2\n10\n1741\n36\n\n\n7549\nCATO (PROVOOST)\n\n2\n1\n1741\n36\n\n\n7550\nCATO (SHURMUR)\n\n2\n1\n1741\n36\n\n\n7551\nHARRY (KIPP)\n\n2\n1\n1741\n36\n\n\n7552\nPRINCE (DUANE)\n\n2\n1\n1741\n36\n\n\n7553\nTONEY (LATHAM)\n\n2\n1\n1741\n36\n\n\n7554\nYORK (MARSCHALK)\n\n2\n11\n1741\n36\n\n\n7555\nWILL (WARD)\n\n2\n10\n1741\n36\n\n\n7556\nFORTUNE (WATSON)\n\n2\n1\n1741\n36\n\n\n7557\nFRANK (RYKER)\n\n2\n1\n1741\n36\n\n\n7558\nGALLOWAY (RUTGER)\n\n2\n1\n1741\n36\n\n\n7559\nHARRY (MIZREAL)\n\n2\n10\n1741\n36\n\n\n7560\nOTHELLO (DE LANCEY)\n\n2\n1\n1741\n36\n\n\n7561\nQUACK (WALTERS)\n\n2\n1\n1741\n36\n\n\n7562\nVENTURE (TIEBOUT)\n\n2\n1\n1741\n36\n\n\n7563\nWAN (SARLEY)\n\n2\n1\n1741\n36\n\n\n7564\nURY JOHN\n\n1\n1\n1741\n36\n\n\n\n\n\n\n\nOh for f’s sake. I see that there were different methods of execution that, not perfectly, but pretty tidily map to race. People who were white (race == 1) were hanged (1), while Black people were sometimes hanged, but also executed by methods 10 and 11 (burning, and hanging in chains). This dataset just keeps giving."
+  },
+  {
+    "objectID": "projects/demo/stage2.html#about",
+    "href": "projects/demo/stage2.html#about",
+    "title": "Initial Questions",
+    "section": "",
+    "text": "The dataset is Executions in the United States, 1608 - 2002: The Espy File. It is stored in the _data folder, and the entire set of downloaded files from ICPSR is in the folder ICPSR-08451. Below, you’ll see that I’m using inscrutable column names. They are labled in the file projects/demo/_data/ICPSR_08451/DS0001/08451-0001-Codebook.pdf\n\n\n\nMy initial research question is pretty vague – “Are there trends in the crimes for which people have been executed in the United States?” And if I’m being honest, this isn’t the right question for someone with both my disciplinary background and my technical skillset/interests. I’m more interested in how this dataset is shaped, and what I might learn from the kinds of values I’m seeing in it. (This is a more inductive approach.)"
+  },
+  {
+    "objectID": "projects/demo/stage2.html#first-question-gender",
+    "href": "projects/demo/stage2.html#first-question-gender",
+    "title": "Initial Questions",
+    "section": "",
+    "text": "I notice that there is a field that defines the sex of the person. What’s the gender breakdown within this dataset?\n\nimport pandas as pd\nfrom pyprojroot import here # this helps us navigate tricky path stuff between local runs and quarto builds\n\n# Load the data using here() with the path from the project root\nfile_path = here(\"projects/demo/_data/ICPSR_08451/DS0001/08451-0001-Data.tsv\")\ndf = pd.read_csv(file_path, sep='\\t')  # Remember!! use '\\t' for tab-separated (which this data is)\n\n# how many people executed were women? (where V19 = 2)\ncount_v19 = len(df[df['V19'] == '2']) # NOTE - this column is a varchar, so you need to put quotes around your integer. \n\n# total rows in dataset\ntotal_rows = len(df)\n\n# lil percent count\ngender_breakdown = count_v19 / total_rows * 100\n\nprint(\"Number of women: \", count_v19)\nprint(\"Total Rows \", total_rows)\nprint(f\"Percentage of women: \",  gender_breakdown)\n\nNumber of women:  364\nTotal Rows  15268\nPercentage of women:  2.384071260151952\n\n\nAt this point, I know that 364 women (2.38%) of all people executed in this dataset were women. Within those 364, what else can I learn?"
+  },
+  {
+    "objectID": "projects/demo/stage2.html#occupation",
+    "href": "projects/demo/stage2.html#occupation",
+    "title": "Initial Questions",
+    "section": "",
+    "text": "# Let's assign that subset to it's own data frame so that we can work just with it\nwomen = df[df['V19'] == '2']\n\n# What kinds of jobs (col V21) did these women have? \nmost_common_jobs = women['V21'].value_counts().head(10)\n\nprint(most_common_jobs)\n\nV21\n610    154\n       102\n328     51\n197     11\n593      8\n509      5\n440      4\n719      4\n327      3\n731      2\nName: count, dtype: int64\n\n\nOkay, whatever job is 610 is by far the most common, with “no occupation recorded” (NULL) the second most common. 328, a distant second, and 197 less than 3% (11 women). Let’s go to the Codebook and see what these jobs are.\ncode - occupation\n610 - Slave\n328 - Housewife\n197 - Domestic Servant\n593 - Servant\n509 - Prostitute\n440 - Nurse\n719 - Waitress\n327 - Housekeeper\n731 - Widow\n\n\n\n\n\n\nNote\n\n\n\nYIKES. I wasn’t expecting to see “Slave” as an occupation in this dataset. This makes sense with the broad history of the US - does it make “sense” within this dataset?"
+  },
+  {
+    "objectID": "projects/demo/stage2.html#trigger-warning",
+    "href": "projects/demo/stage2.html#trigger-warning",
+    "title": "Initial Questions",
+    "section": "",
+    "text": "Based on what we’re seeing here (and some browsing I’m doing in the explorer), it looks like the majority of women executed were executed during slavery in the United States. Let’s see what the median year in this dataset is - does this make sense?\n\nmedian_year = women['V14'].median()\nprint(median_year)\n\n1826.5\n\n\nOkay, the median year is 1826. (Remember, the 13th Amendment which constitutionally abolished slavery was in 1856) This validates the occupation data we’re seeing. Let’s also check if there was race (column V5) recorded. In the codebook, these are the values for race: 0 M Do Not Know; NA 1 White 2 Black 3 Native American 4 Asian-Pacific Il 5 Hispanic 6 Other\n\n# What was recorded for race? \nmost_common_race = women['V5'].value_counts().head(3)\n\nprint(most_common_race)\n\nV5\n2    198\n1    138\n      20\nName: count, dtype: int64"
+  },
+  {
+    "objectID": "projects/demo/stage2.html#crimes",
+    "href": "projects/demo/stage2.html#crimes",
+    "title": "Initial Questions",
+    "section": "",
+    "text": "Okay, this is still making sense. A few more general questions about women. Across all, what were their crimes?\n\nmost_common_crimes = women['V10'].value_counts().head(10)\n\nprint(most_common_crimes)\n\nV10\n1     225\n9      26\n16     20\n10     20\n       18\n33     12\n40      8\n6       7\n8       5\n36      5\nName: count, dtype: int64\n\n\ncode - crime\n1 - Murder\n9 - Witchcraft\n16 - Arson\n10 - Robbery-Murder\n33 - Poisoning\n40 - Attempted Murder\n6 - Conspiracy to Murder\n8 - Slave revolt\n36 - Unspecified Felony\n\n\nWoof. Okay. This also makes sense. All of this is part of finding one’s way around the dataset. I am expecting that the women executed for witchcraft were white (based on Hollywood movies about witch trials)\n\n# reminder, crime V10, race V5\n# we are asking slightly more complicated questions now\n# of the women where V10 = 9 (witchcraft), what were their races?\n\nrace_of_witches = women[women['V10']==\"9\"][\"V5\"].value_counts().head(3)\nprint(race_of_witches) # or rather, women convicted of witchcraft\n\nV5\n1    26\nName: count, dtype: int64\n\n\n\n\n\nWe’re seeing data that matches historical expectations (though we must always be careful when making these!). Women executed for witchcraft were exclusively white in the dataset. I would similarly expect women convicted of “Slave Revolt” to be Black. Does this track?\n\n# reminder, crime V10, race V5\n# we are asking slightly more complicated questions now\n# of the women where V10 = 8 (slave revolt), what were their races?\n\nrace_of_revolters = women[women['V10']==\"8\"][\"V5\"].value_counts().head(3)\nprint(race_of_revolters) # or rather, women convicted of 'slave revolt'\n\nV5\n1    4\n2    1\nName: count, dtype: int64\n\n\nSurprise! That is also majority white women (4 to 1). Who were these women?\n\n\n\n# (NOTE, you could do this in the explorer, but then it wouldn't be permanent. This helps us revisit this data any time as we keep thinking through our questions)\n\n# the 5 women convicted and executed for 'slave revolt'\nrevolters = women[women['V10']=='8']\n\n# let's make printing easier/prettier and grab just the columns we need\n# V7 = name, V6 = age, V5 = race, V11 = method of ex, V14 year, V16 state\n\npretty_table = revolters[['V7', 'V6', 'V5', 'V11', 'V14', 'V16']].copy()\npretty_table.columns = ['Name', 'Age', 'Race', 'Method', 'Ex Year', 'State']\n\npretty_table\n\n\n\n\n\n\n\n\nName\nAge\nRace\nMethod\nEx Year\nState\n\n\n\n\n4822\n\n\n2\n1\n1730\n22\n\n\n7505\nABIGAIL (VANINBURGH)\n\n1\n1\n1712\n36\n\n\n7506\nSARAH (PELS)\n\n1\n1\n1712\n36\n\n\n7539\nKERRY MARGARET\n\n1\n1\n1741\n36\n\n\n7541\nHUGHSON SARAH\n\n1\n1\n1741\n36"
+  },
+  {
+    "objectID": "projects/demo/stage2.html#section",
+    "href": "projects/demo/stage2.html#section",
+    "title": "Initial Questions",
+    "section": "",
+    "text": "Okay, something happened in 1741 with Margaret Kerry and SArah Hughson (I’m guessing). A quick web search of these two names reveals (1) A website called “executedtoday.com” (grim), with details of this situation. It was apparently part of the “New York Slave Rebellion of 1741” (Brittanica Entry)\nIf this dataset is complete, I would expect to see a lot of people executed in New York (state == 36) in 1741. The Brittanica entry reads “As a result of the rumors, false confessions, and finger-pointing, approximately 30 Black people and 4 white people (the Hughsons, Kerry, and Ury) were executed, and some 80 more people, mostly Black but some white, were exiled.” Does the dataset have this data?\n\n\n\n# we're going back to the entire dataset now and checking on the year 1741\nrevolters = df[df['V14'] == 1741]\n\nprint(\"Total Executions in 1741\", len(revolters))\n\nTotal Executions in 1741 43\n\n\nThis is close. What about in New York State?\n\n# we're going back to the entire dataset now and checking on the year 1741\nrevolters = df[df['V14'] == 1741]['V16']\n\nprint(\"Top 3 states with executions in 1741\", revolters.value_counts().head(3))\n\nTop 3 states with executions in 1741 V16\n36    34\n34     2\n45     2\nName: count, dtype: int64\n\n\nOkaaaay! I’m not sure if this is the focus I want to pursue for the next phase, but this data seems to line up really tidily with this historical account. I wasn’t expecting to find any of this when I grabbed this dataset, but this feels like a fine stopping point for this line of inquiry. Let’s put names to these folks, too, and then take a step back for another set of questions.\n\n\n\n\n# filter for year of execution (V14) and state of execution (V16)\nny_revolters = df[(df['V14'] == 1741) & (df['V16'] == 36)]\n\npretty_table = ny_revolters[['V7', 'V6', 'V5', 'V11', 'V14', 'V16']].copy()\npretty_table.columns = ['Name', 'Age', 'Race', 'Method', 'Ex Year', 'State']\n\npretty_table\n\n\n\n\n\n\n\n\nName\nAge\nRace\nMethod\nEx Year\nState\n\n\n\n\n7531\nTOM\n\n2\n\n1741\n36\n\n\n7532\nCOOK (COMFORT)\n\n2\n10\n1741\n36\n\n\n7533\nCAESAR (VAARCK)\n\n2\n1\n1741\n36\n\n\n7534\nPRINCE (ABOYNEAU)\n\n2\n1\n1741\n36\n\n\n7535\nCUFFEE (PHILIPSE)\n\n2\n10\n1741\n36\n\n\n7536\nQUACK (ROOSEVELT)\n\n2\n10\n1741\n36\n\n\n7537\nCUFFEE (GOMEZ)\n\n2\n10\n1741\n36\n\n\n7538\nCAESER (PECK)\n\n2\n10\n1741\n36\n\n\n7539\nKERRY MARGARET\n\n1\n1\n1741\n36\n\n\n7540\nHUGHSON JOHN\n\n1\n1\n1741\n36\n\n\n7541\nHUGHSON SARAH\n\n1\n1\n1741\n36\n\n\n7542\nALBANY (CARPENTER)\n\n2\n10\n1741\n36\n\n\n7543\nDICK CURACOA\n\n2\n10\n1741\n36\n\n\n7544\nFRANCIS (BOSCH)\n\n2\n10\n1741\n36\n\n\n7545\nBEN (MARSHALL)\n\n2\n10\n1741\n36\n\n\n7546\nCATO (COWLEY)\n\n2\n1\n1741\n36\n\n\n7547\nFORTUNE(VANDERSPIEGL)\n\n2\n1\n1741\n36\n\n\n7548\nQUASH (RUTGERS)\n\n2\n10\n1741\n36\n\n\n7549\nCATO (PROVOOST)\n\n2\n1\n1741\n36\n\n\n7550\nCATO (SHURMUR)\n\n2\n1\n1741\n36\n\n\n7551\nHARRY (KIPP)\n\n2\n1\n1741\n36\n\n\n7552\nPRINCE (DUANE)\n\n2\n1\n1741\n36\n\n\n7553\nTONEY (LATHAM)\n\n2\n1\n1741\n36\n\n\n7554\nYORK (MARSCHALK)\n\n2\n11\n1741\n36\n\n\n7555\nWILL (WARD)\n\n2\n10\n1741\n36\n\n\n7556\nFORTUNE (WATSON)\n\n2\n1\n1741\n36\n\n\n7557\nFRANK (RYKER)\n\n2\n1\n1741\n36\n\n\n7558\nGALLOWAY (RUTGER)\n\n2\n1\n1741\n36\n\n\n7559\nHARRY (MIZREAL)\n\n2\n10\n1741\n36\n\n\n7560\nOTHELLO (DE LANCEY)\n\n2\n1\n1741\n36\n\n\n7561\nQUACK (WALTERS)\n\n2\n1\n1741\n36\n\n\n7562\nVENTURE (TIEBOUT)\n\n2\n1\n1741\n36\n\n\n7563\nWAN (SARLEY)\n\n2\n1\n1741\n36\n\n\n7564\nURY JOHN\n\n1\n1\n1741\n36\n\n\n\n\n\n\n\nOh for f’s sake. I see that there were different methods of execution that, not perfectly, but pretty tidily map to race. People who were white (race == 1) were hanged (1), while Black people were sometimes hanged, but also executed by methods 10 and 11 (burning, and hanging in chains). This dataset just keeps giving."
+  },
+  {
+    "objectID": "projects/demo/stage2.2.html",
+    "href": "projects/demo/stage2.2.html",
+    "title": "Initial Questions",
+    "section": "",
+    "text": "Note\n\n\n\nI’m back with this same dataset. When we left off, the last query revealed racial disparities in methods of execution, along with the crime of slave revolt.\n\n\n\n\n(This is the same text as Stage 2.1)\n\n\nThe dataset is Executions in the United States, 1608 - 2002: The Espy File. It is stored in the _data folder, and the entire set of downloaded files from ICPSR is in the folder ICPSR-08451. Below, you’ll see that I’m using inscrutable column names. They are labled in the file projects/demo/_data/ICPSR_08451/DS0001/08451-0001-Codebook.pdf\n\n\n\nMy initial research question is pretty vague – “Are there trends in the crimes for which people have been executed in the United States?” And if I’m being honest, this isn’t the right question for someone with both my disciplinary background and my technical skillset/interests. I’m more interested in how this dataset is shaped, and what I might learn from the kinds of values I’m seeing in it. (This is a more inductive approach.)\n\n\n\nWe’ve already done some exploration, so let’s start with just loading the dataset up and getting ready.\n\nimport pandas as pd\nfrom pyprojroot import here # this helps us navigate tricky path stuff between local runs and quarto builds\n\n# Load the data using here() with the path from the project root\nfile_path = here(\"projects/demo/_data/ICPSR_08451/DS0001/08451-0001-Data.tsv\")\ndf = pd.read_csv(file_path, sep='\\t')  # Remember!! use '\\t' for tab-separated (which this data is)\n\n\n\n\n\nSo when I left off in Stage 2.1, I’d discovered racial disparities in methods of execution. Let’s see if those exist across the dataset. NOTE: I’m not making any claims about anything. I’m just asking - in the dataset, do we see disparaities? It’s really hard to make any claims about the world with a dataset that spans ~400 years.\n\n# Method of execution: column V11\nmethods = df['V11'].value_counts().head(10)\n\nmethods\n\nV11\n1     9322\n2     4426\n5      621\n3      593\n4      143\n10      66\n        43\n15      24\n8       12\n11       9\nName: count, dtype: int64\n\n\nHere are the methods, from the codebook:\n0 M Do Not Know; NA\n1 Hanging\n2 Electrocution\n3 Asphyxiation-Gas\n4 Shot\n5 Injection\n6 Pressing\n8 Break on Wheel\n10 Burned\n11 Hung in Chains\n13 Bludgeoned\n14 Gibbetted\n15 Other\nThe popularity of 1 and 2 make sense given that hanging has been technologically available this whole time, and electrocution was introduced around 1900.\nLet’s expand our skillset, and our questions. How has the popularity of various methods changed over time?\nDocumentation for techniques below - crosstab - crosstab walkthrough note: this example does use binary gender\n\n\n\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n# 1. Ensure V14 (year) is numeric\ndf['V14'] = pd.to_numeric(df['V14'], errors='coerce')\n\n# 2. Create a table where rows=years, columns=methods\nmethod_trends = pd.crosstab(df['V14'], df['V11'])\n\n# 3. Plot the data\nmethod_trends.plot(kind='line', figsize=(10, 6))\n\n# 4. Add labels to make it look nice\nplt.title('Popularity of Execution Methods Over Time')\nplt.xlabel('Year')\nplt.ylabel('Number of Executions')\nplt.legend(title='Method', bbox_to_anchor=(1.05, 1), loc='upper left') # Moves legend outside the plot\nplt.tight_layout() # Ensures everything fits in the output image\nplt.show()\n\n\n\n\n\n\n\n\nOkay, we’re cooking - we can see that execution by hanging was most popular in the late 1800s/early 1900s, and was replaced by electrocution, which itself spiked in popularity in the 1950s.\n\n\n\n\nHow can we understand if there’s any relationship between the method of execution and other categorical variables, like race (which emerged as a surprise at the end of Stage 2.1)?\n\n\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# 1. Create the crosstab \n# The first variable (V5) becomes the x-axis (rows), the second (V11) becomes the stacked colors (columns)\nrace_method_ct = pd.crosstab(df['V5'], df['V11'])\n\n# 2. Plot it with stacked=True\n# We use a colormap like 'viridis' or 'Set2' to make the different methods distinct\nrace_method_ct.plot(kind='bar', stacked=True, figsize=(10, 6), colormap='viridis')\n\n# 3. Format the chart\nplt.title('Execution Methods by Race (Raw Counts)')\nplt.xlabel('Race Code (V5)')\nplt.ylabel('Number of Executions')\nplt.legend(title='Method (V11)', bbox_to_anchor=(1.05, 1), loc='upper left')\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# 1. Create a normalized crosstab (normalize='index' means each row adds up to 1.0)\nrace_method_prop = pd.crosstab(df['V5'], df['V11'], normalize='index')\n\n# 2. Plot the stacked bar chart\nrace_method_prop.plot(kind='bar', stacked=True, figsize=(10, 6), colormap='viridis')\n\n# 3. Format the chart\nplt.title('Execution Methods by Race (Proportions)')\nplt.xlabel('Race Code (V5)')\nplt.ylabel('Percentage (0.0 to 1.0)')\nplt.legend(title='Method (V11)', bbox_to_anchor=(1.05, 1), loc='upper left')\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\nThis doesn’t really tell us anything - this also makes sense. Given the LONG coverage of this dataset.\nWhat’s NEXT …\n\n\n\n\n\nthese plotting instances - including figuring out some customization and thinking about the VIBES around these renderings."
+  },
+  {
+    "objectID": "projects/demo/stage2.2.html#about",
+    "href": "projects/demo/stage2.2.html#about",
+    "title": "Initial Questions",
+    "section": "",
+    "text": "(This is the same text as Stage 2.1)\n\n\nThe dataset is Executions in the United States, 1608 - 2002: The Espy File. It is stored in the _data folder, and the entire set of downloaded files from ICPSR is in the folder ICPSR-08451. Below, you’ll see that I’m using inscrutable column names. They are labled in the file projects/demo/_data/ICPSR_08451/DS0001/08451-0001-Codebook.pdf\n\n\n\nMy initial research question is pretty vague – “Are there trends in the crimes for which people have been executed in the United States?” And if I’m being honest, this isn’t the right question for someone with both my disciplinary background and my technical skillset/interests. I’m more interested in how this dataset is shaped, and what I might learn from the kinds of values I’m seeing in it. (This is a more inductive approach.)\n\n\n\nWe’ve already done some exploration, so let’s start with just loading the dataset up and getting ready.\n\nimport pandas as pd\nfrom pyprojroot import here # this helps us navigate tricky path stuff between local runs and quarto builds\n\n# Load the data using here() with the path from the project root\nfile_path = here(\"projects/demo/_data/ICPSR_08451/DS0001/08451-0001-Data.tsv\")\ndf = pd.read_csv(file_path, sep='\\t')  # Remember!! use '\\t' for tab-separated (which this data is)"
+  },
+  {
+    "objectID": "projects/demo/stage2.2.html#methods",
+    "href": "projects/demo/stage2.2.html#methods",
+    "title": "Initial Questions",
+    "section": "",
+    "text": "So when I left off in Stage 2.1, I’d discovered racial disparities in methods of execution. Let’s see if those exist across the dataset. NOTE: I’m not making any claims about anything. I’m just asking - in the dataset, do we see disparaities? It’s really hard to make any claims about the world with a dataset that spans ~400 years.\n\n# Method of execution: column V11\nmethods = df['V11'].value_counts().head(10)\n\nmethods\n\nV11\n1     9322\n2     4426\n5      621\n3      593\n4      143\n10      66\n        43\n15      24\n8       12\n11       9\nName: count, dtype: int64\n\n\nHere are the methods, from the codebook:\n0 M Do Not Know; NA\n1 Hanging\n2 Electrocution\n3 Asphyxiation-Gas\n4 Shot\n5 Injection\n6 Pressing\n8 Break on Wheel\n10 Burned\n11 Hung in Chains\n13 Bludgeoned\n14 Gibbetted\n15 Other\nThe popularity of 1 and 2 make sense given that hanging has been technologically available this whole time, and electrocution was introduced around 1900.\nLet’s expand our skillset, and our questions. How has the popularity of various methods changed over time?\nDocumentation for techniques below - crosstab - crosstab walkthrough note: this example does use binary gender\n\n\n\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n# 1. Ensure V14 (year) is numeric\ndf['V14'] = pd.to_numeric(df['V14'], errors='coerce')\n\n# 2. Create a table where rows=years, columns=methods\nmethod_trends = pd.crosstab(df['V14'], df['V11'])\n\n# 3. Plot the data\nmethod_trends.plot(kind='line', figsize=(10, 6))\n\n# 4. Add labels to make it look nice\nplt.title('Popularity of Execution Methods Over Time')\nplt.xlabel('Year')\nplt.ylabel('Number of Executions')\nplt.legend(title='Method', bbox_to_anchor=(1.05, 1), loc='upper left') # Moves legend outside the plot\nplt.tight_layout() # Ensures everything fits in the output image\nplt.show()\n\n\n\n\n\n\n\n\nOkay, we’re cooking - we can see that execution by hanging was most popular in the late 1800s/early 1900s, and was replaced by electrocution, which itself spiked in popularity in the 1950s."
+  },
+  {
+    "objectID": "projects/demo/stage2.2.html#methods-and-_____",
+    "href": "projects/demo/stage2.2.html#methods-and-_____",
+    "title": "Initial Questions",
+    "section": "",
+    "text": "How can we understand if there’s any relationship between the method of execution and other categorical variables, like race (which emerged as a surprise at the end of Stage 2.1)?\n\n\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# 1. Create the crosstab \n# The first variable (V5) becomes the x-axis (rows), the second (V11) becomes the stacked colors (columns)\nrace_method_ct = pd.crosstab(df['V5'], df['V11'])\n\n# 2. Plot it with stacked=True\n# We use a colormap like 'viridis' or 'Set2' to make the different methods distinct\nrace_method_ct.plot(kind='bar', stacked=True, figsize=(10, 6), colormap='viridis')\n\n# 3. Format the chart\nplt.title('Execution Methods by Race (Raw Counts)')\nplt.xlabel('Race Code (V5)')\nplt.ylabel('Number of Executions')\nplt.legend(title='Method (V11)', bbox_to_anchor=(1.05, 1), loc='upper left')\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# 1. Create a normalized crosstab (normalize='index' means each row adds up to 1.0)\nrace_method_prop = pd.crosstab(df['V5'], df['V11'], normalize='index')\n\n# 2. Plot the stacked bar chart\nrace_method_prop.plot(kind='bar', stacked=True, figsize=(10, 6), colormap='viridis')\n\n# 3. Format the chart\nplt.title('Execution Methods by Race (Proportions)')\nplt.xlabel('Race Code (V5)')\nplt.ylabel('Percentage (0.0 to 1.0)')\nplt.legend(title='Method (V11)', bbox_to_anchor=(1.05, 1), loc='upper left')\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\nThis doesn’t really tell us anything - this also makes sense. Given the LONG coverage of this dataset.\nWhat’s NEXT …"
+  },
+  {
+    "objectID": "projects/demo/stage2.2.html#fix-fix-fix",
+    "href": "projects/demo/stage2.2.html#fix-fix-fix",
+    "title": "Initial Questions",
+    "section": "",
+    "text": "these plotting instances - including figuring out some customization and thinking about the VIBES around these renderings."
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "Extra detail about each type of assignment and the final project below."
+  },
+  {
+    "objectID": "assignments.html#in-class-work",
+    "href": "assignments.html#in-class-work",
+    "title": "Assignments",
+    "section": "In class work",
+    "text": "In class work\n\nClass summary sheets / Exit tickets\n\nWhy we do it\nReflecting on the material is an important part of working in an application domain. These give you practice responding to ethical/domain-specific questions in the same way you will be asked to do so in your data science career.\n\n\nWhat it is\nClass summary sheets are handouts that you turn in at the end of some classes answering a question related to that day’s lecture or an aspect of the reading. Some students do not do well speaking in class, others prefer speaking to writing. These sheets give some students a chance to communicate in their strongest medium, and others the opportunity to strenghten their impromptu written communication skills.\n\n\nHow it’s graded\nThese are graded credit/no credit and cannot be made up if you are absent from class. The only way to get no credit for a sheet that you filled out is if you obviously did not do the reading and obviously are writing answers that are completely irrelevant.\nWe will have ~25 class meetings this semester, and will only do these on the 12 or 13 seminar days. Full credit for this section is 10 sheets.\n\n\n\nSkills review\n\nWhy we do it\nA data science or computer science career is one in which you’ll be constantly learning new things and explaining them to other members of your team. This gives you a safe way to practice this skill.\n\n\nWhat it is\nYou’ll come to the front of the class and lead us through about a 7-10 minute review of a predetermined skill that we’ve covered previously.\n\n\nHow it’s graded\nThese are graded credit/no credit and cannot be made up if you are absent from class. The only way to get no credit is if you obviously did not prepare.\nWe will have ~25 class meetings this semester, and will only do these on the 12 or 13 lab days. Full credit for this is 1 presentation. Depending on the class size, these may be done in pairs, or we may do more than one each lab class.\nSign up and remember - you are responsible for switching with another student if you cannot make the date you signed up for."
+  },
+  {
+    "objectID": "assignments.html#leading-class-discussion",
+    "href": "assignments.html#leading-class-discussion",
+    "title": "Assignments",
+    "section": "Leading class discussion",
+    "text": "Leading class discussion\n\nWhy we do it\nThis assignment gives you the opportunity to practice a few important skills: communicating summary information, asking questions about new/complex material, speaking in public (😬), and moderating and facilitating conversations about complex subjects.\n\n\n\n\n\n\nImportant\n\n\n\nYou are responsible for signing yourself up to be a class leader. If you cannot attend class that day, you are responsible for switching with another student. Class Leader Schedule\n\n\n\n\nWhat it is\nLeading class discussion involves preparing materials about the day’s topic, summarizing the reading, and then leading class through ~15 minutes of discussion.\nWhen it’s your day to lead, you’ll need to create a branch and make edits to the day’s lecture slides before class. The lecture files are markdown in the lectures folder. You’ll find the appropriate file (week number, class number (for example the Class 1 of Week 2 week2-c1.qmd) . You’ll know where to add your slides by reading the code and finding the comment:\n&lt;!-- Discussion Leader: Add your slides here --&gt;\nWhen it’s your turn to lead discussion, you will make these edits:\n\nCreate 1 slide with\n\nA link to a piece of inside-written (or other authors who are system-impacted) journalism or reporting about something related to the reading, the coursework, or your particular research project. We do this because it’s important to listen to people who have directly experienced the criminal legal system.\n\nIf you’re not sure where to start, try Prison Journalism Project, Prison Writers, The Freedom Archive, American Prison Writing Archive, or works by authors like those associated with the Incarcerated Writers Bureau,\n\nA link to a current news article related to the topic.\n1 - 2 sentences about how these are related to the day’s topics\n\nCreate 2 slides with an overview of the main points of the reading.\nCreate 1 slide with discussion questions. Here’s a popular guide for how to ask good discussion questions.\nOpen a pull request containing JUST these 4 slides (and any associated images that you require which should be stored in lectures/images) and assign it to me by twelve pm the day of the class. Note that the PR must pass all tests, so try not to put it off until the last minute in case tests fail!\n\nif you open a PR with failing tests and don’t fix it yourself, I will fix it and merge before class but/and that will impact your grade on that portion of the assignment\n\n\nDuring class:\n\nAt a certain point (likely different in each class), you’ll come to the front of the room and spend 7-10 minutes discussing the links you found and giving us an overview of the reading.\nThen, you’ll have 13-15 minutes to lead discussion with your peers. I won’t participate unless called on. :)\n\n\n\nHow its Graded\nThese are graded credit/no credit for each of 7 components:\n\nfour complete slides (each credit/no credit)\nPR open and building (no credit for an open PR that fails to build - so remember to start early!)\npresented slides for 7-10 minutes\nfacilitated discussion for 13-15 minutes\n\nSign up and remember - you are responsible for switching with another student if you cannot make the date you signed up for."
+  },
+  {
+    "objectID": "assignments.html#midterm-and-final-evaluations",
+    "href": "assignments.html#midterm-and-final-evaluations",
+    "title": "Assignments",
+    "section": "Midterm and Final Evaluations",
+    "text": "Midterm and Final Evaluations\nThe midterm and final checkins will be a mix between a conversation and an oral exam. You’ll schedule a 20-minute block to come to my office where we will talk generally about how the class is going for you and how your project is going. I’ll then ask you to respond to two questions, one about the reading, and one about the technical stack we’re using. All questions will be shared at least a week before the exams.\nMidterm Conversations will happen between October 14 and 19. Note no class 10/21 Finals Conversations will happen during finals week.\n\nHow its graded\nThese are graded credit/no credit along the following dimensions\n\nscheduled an evaluation and arrived on time (within ~3 minutes of the start)\ndemonstrated an ability to talk honestly about the reading\ndemonstrated an ability to talk honestly about the project (this does not mean that your project needs to be going well. It only means that you are aware of how the project is going and are able to talk about it with a level of detail that demonstrates that you’re engaged)\ndemonstrated an ablilty to talk through the technical answer with at least about 75% accuracy\ndemonstrated an ability to respond to the reading question citing evidence from the text"
+  },
+  {
+    "objectID": "assignments.html#research-project",
+    "href": "assignments.html#research-project",
+    "title": "Assignments",
+    "section": "Research Project",
+    "text": "Research Project\nThe research project will have many component parts and will be a project that we scaffold over the course of the semester so that you will have the chance to continue to refine and revise your thinking. This project includes submitting many smaller tasks, including research questions, a bibliography, a literature review, first draft, final draft, and a code + documentation bundle. Each component will be graded separately.\n\nStage 1 - Exploration + Workflow\nDUE September 30, 2026\nDuring the first stage of the project, we’re practicing:\n\ngetting comfortable in the IDE, including customizing it as needed for our tasks (let the tools work for us!)\ngetting comfortable with git and the Github pull request workflow (let the tools work for us!)\ndeveloping our research questions and building lists of resources and literature to review\nforming research clusters to support our research\n\n\nFinal Deliverable\nIn a pull request:\n\nyou’ve made a project in the project folder, which is a copy of the projects/template folder with only the files you’re working with at this stage. So, don’t copy a bunch of meaningless template files into your project - delete all of the ones you don’t need yet. You can add them later when the phase is appropriate.\nWithin that folder, you’ve:\n\nupdated the yaml front matter of index.qmd to be accurate to your project\nadded the yaml category for your research group (we will ID these in class)\nfilled out all of the sections of research-plan.qmd\n\nIn the datasets.qmd file, you’ve added five datasets that you’ve found that could be useful to your inquiry. You can create a new subheading if it’s appropriate, or spread the links across pre-existing sections\n\nAs a research cluster, you will write three paragraphs (about 350 words) about the connections you see between your projects, and how you are planning to use the cluster to support your individual research projects. Name this file following the pattern g.cluster-name.qmd and put it directly in the main projects folder (it will be a sibling to your individual project folders). If your project cluster was about Women In Prison, you might name your file g.women-in-prison.qmd Only one of your cluster members will add this to their Stage 1 Pull Request, so talk about it amongst yourselves to figure out who will do this.\n\n\n\nStage 2 - Analyzing Data & Scaffolding the Report\nDue Wednesday, October 21, 2026 / No class this day\nDuring the second stage, we’re actively working on data analysis and making sure that all work is building successfully. This includes:\n\nwriting python code to analyze the data\ndrafting preliminary writing about the technical/quantitative steps you’re taking\ndiscussing your results with your research cluster\nexploring data visualizations\n\n\nKey Deliverables\nMore details about these deliverables and what you’ll turn in will appear closer to the due date!\n\nProject and Report scaffold\nUpdated (if necessary) research questions / investigation description\n\n\n\n\nStage 3 - Building and Deploying\nDue Monday, November 23\nDuring the third stage of the project, we’re practicing:\n\nForeclosing possibilities (aka, committing to a direction even if you’re uncertain about the results)\nMaking decisions about the best ways to visualize information\nTelling stories with data / questioning what data may be telling us\n\n\nKey Deliverables\nMore details about these deliverables and what you’ll turn in will appear closer to the due date!\n\nfinal-first-draft report\ndraft abstract\n\n\n\n\nStage 4 - Reflection + Refinement\nDue December 15, 2026\nDuring the first stage of the project, we’re practicing:\n\nrevising key findings\nviewing and critiquing others’ work\nreflecting on the process and what we’ve learned\n\n\nKey Deliverables\n\nfinal report\nUpdated g.cluster-name.qmd file to list all of the projects from the group.\nself-reflection (private)"
+  },
+  {
+    "objectID": "assignments.html#submitting-work",
+    "href": "assignments.html#submitting-work",
+    "title": "Assignments",
+    "section": "⚠️ Submitting Work",
+    "text": "⚠️ Submitting Work\nWith a few exceptions, 100% of your class work will be performed in a fork of this repository and then submitted via a pull request. &lt;💡How to fork&gt;\nIn order for your work to be complete and accepted,\n\nyou will do all of your work in a descriptively and appropriately named branch that includes your name. For example, if I were going to make a branch to add to the week’s discussion slides, I might name it stevens-w2-slides. A branch for my first project deliverable might be called nikko-project-deliverable. I’m not setting hard-and-fast rules about what you should call the branch, only that you keep in mind that there are many people making many branches and there has to be a way to identify what a branch is for based ONLY on the name of it.\nyou will open a pull request (PR) with just the changes you’re trying to merge in &lt;💡how to open a PR&gt;\nthat PR will build successfully\nyou will make any necessary changes requested by your peers (when a review is required) and to ensure the build succeeds\nyou update the PR with those changes\nI will then merge the PR into the main branch and delete your branch and the cycle will begin again!"
+  },
+  {
+    "objectID": "tech-stack.html",
+    "href": "tech-stack.html",
+    "title": "Development Environment",
+    "section": "",
+    "text": "In order to follow along with this class (and as a customary practice in industry), it’s your responsibility to make sure that your working environment matches what’s below.\n\n\n\n\n\n\nImportant\n\n\n\nIf you are using a Windows machine, it’s also your responsibility to make sure that you have a Linux/Unix terminal available to you on your machine. Windows users, it might be useful to review the difference between a terminal, a console, and a shell\n\n\nDevelopment: You’ll see me write code, and do all of the work for this course in Positron. 💡 Installation Instructions\nCoding Language: You can write code in any language you choose. However, I will only be teaching, troubleshooting, and doing demos in Python. You’ll need to be running Python version 3.14.5. Check your python version with python –-version in the terminal. If you’d like to do your coursework in R, you may be able to get support through the Spinelli Center\nInstalling packages/libraries/modules: We never install python libraries globally. Instead, we work within python virtual environments. There are many modern virtual environments you can use, but I’ll default to the one that comes with Python: venv. 💡 How venv works\nVersion control: We use git for version control. You will not be able to complete class assignments, participate in in-class activities, or complete your final if you don’t have git installed on your machine and if you are not comfortable using it. I teach git skills in the terminal. Check that you have git installed by running git --version in the terminal.\nBonus: When you look at my terminal, you’ll notice some bells and whistles that you likely don’t have available. If you’d like them, you can use Oh My Zsh as your shell."
+  },
+  {
+    "objectID": "examples.html",
+    "href": "examples.html",
+    "title": "Examples",
+    "section": "",
+    "text": "Pudding.cool is a good starting point to see examples of storytelling with data.\nr/dataisbeautful has a ton of examples of data visualization and data storytelling"
+  },
+  {
+    "objectID": "examples.html#general-examples",
+    "href": "examples.html#general-examples",
+    "title": "Examples",
+    "section": "General examples",
+    "text": "General examples\nMany of these are “scrolly telling” sites, where components move as you scroll. We won’t be building anything quite so complicated, but pay attention to what you like about these!\n\nA text analysis of last meals\nCharts and data stories from Vital NYC\nMurky Waters: Navigating the risks of China’s Dual-use Shipyards The tiers are handled especially well!\nPudding: The size of pockets\nPudding: Who is in crosswords\nPudding: birthday death effect (we will likely discuss this one in class)\nSelfie City\nThe Washington Post on Solar Eclipses"
+  },
+  {
+    "objectID": "examples.html#maps",
+    "href": "examples.html#maps",
+    "title": "Examples",
+    "section": "Maps",
+    "text": "Maps\n\nHow the US generates electricity\nDisease related deaths\nEvery prison in the US"
+  },
+  {
+    "objectID": "projects/demo/index.html",
+    "href": "projects/demo/index.html",
+    "title": "DEMO",
+    "section": "",
+    "text": "Lorem Ipsum"
+  },
+  {
+    "objectID": "projects/demo/index.html#project-overview",
+    "href": "projects/demo/index.html#project-overview",
+    "title": "DEMO",
+    "section": "",
+    "text": "Lorem Ipsum"
+  },
+  {
+    "objectID": "projects/template/research-plan.html",
+    "href": "projects/template/research-plan.html",
+    "title": "Research Plan",
+    "section": "",
+    "text": "list three\nquestions you are hoping to answer\nwith your invesitgation"
+  },
+  {
+    "objectID": "projects/template/research-plan.html#phase-1-research-questions",
+    "href": "projects/template/research-plan.html#phase-1-research-questions",
+    "title": "Research Plan",
+    "section": "",
+    "text": "list three\nquestions you are hoping to answer\nwith your invesitgation"
+  },
+  {
+    "objectID": "projects/template/research-plan.html#personal-motivation",
+    "href": "projects/template/research-plan.html#personal-motivation",
+    "title": "Research Plan",
+    "section": "Personal Motivation",
+    "text": "Personal Motivation\nWrite about 100 words about your motivation for undertaking this topic. Why are you personally interested in this material? You can be as personal or as general as you wish here, but this section is about YOUR interest in the material"
+  },
+  {
+    "objectID": "projects/template/research-plan.html#broader-relevance",
+    "href": "projects/template/research-plan.html#broader-relevance",
+    "title": "Research Plan",
+    "section": "Broader Relevance",
+    "text": "Broader Relevance\nWrite about 100 words discussing why you think the answers to these questions might matter to others. Is this an understudied topic? Have the conclusions you’ve been seeing about it been wrong or missing something? This is your answer to the “so what?” question"
+  },
+  {
+    "objectID": "projects/template/research-plan.html#example-projects",
+    "href": "projects/template/research-plan.html#example-projects",
+    "title": "Research Plan",
+    "section": "Example Projects",
+    "text": "Example Projects\nLink to three example projects that are related to your questions or how you’d like to display your results. List them like so:\nLink to Project: 2-3 sentences about the similarities you see or the inspriation you’re taking.\nLink to Project: 2-3 sentences about the similarities you see or the inspriation you’re taking.\nLink to Project: 2-3 sentences about the similarities you see or the inspriation you’re taking."
+  },
+  {
+    "objectID": "projects/template/research-plan.html#relevant-literature",
+    "href": "projects/template/research-plan.html#relevant-literature",
+    "title": "Research Plan",
+    "section": "Relevant Literature",
+    "text": "Relevant Literature\nBuild a ten item literature review for work related to your questions.\nAs you consider which 10 to include, try to satisfy these criteria:\n\n1 - 2 written by someone on the inside or system impacted\n3ish non-academic sources\nat least 5 academic sources\nno more than 2 items that we’ve discussed in class / from the syllabus\n\nNo need to include a full citation. Instead, list them:\nTitle of Book/Article/Movie: 2-3 sentences about the connection between this work and your research questions. Do not guess at these - do enough research on each item to have definite ways that the material is connected to your research"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Course Projects",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nDEMO\n\n\n\nPunishment\n\nNAME-OF-RESEARCH-GROUP\n\n\n\nDemo project\n\n\n\nNikko Stevens\n\n\nSep 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nTemplate Project\n\n\n\nInvestigation\n\nCapture\n\nTrial\n\nDetention\n\nSupervision\n\nRelease\n\nRe-entry\n\n\n\nCopy This Template For your Project\n\n\n\nYour name here, If you had help, their name here\n\n\nSep 1, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "lectures.html",
+    "href": "lectures.html",
+    "title": "Course Lectures",
+    "section": "",
+    "text": "Every slide deck that you see in class is listed here, along with a high-level list of the topics we covered. You can view the slideshow (including any speaker notes), or head over to the repo and browse the source itself. If we paused the lecture to take notes on something in the middle, you’ll find those notes randomly in the slideshow wherever that happened.\nIf the class hasn’t happened yet, no need to review it - it’s available in the repo so that students can put their slides in early.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\ntopics\n\n\n\n\n\n\n\n\nWeek 2, Class 1\n\n\nHistory of data in the CLS\n\n\nJohnson - 2 regimes, UCR reports\n\n\n\n\n\n\nWeek 2, Class 2\n\n\nWalkthrough of the tech stack\n\n\nPositron, git, python, demo projects\n\n\n\n\n\n\nWeek 1, Class 1\n\n\nPhases of the criminal legal system\n\n\nsyllabus, how to read, steps of the CLS\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "datasets.html",
+    "href": "datasets.html",
+    "title": "Data Sources",
+    "section": "",
+    "text": "Fatal Encounters\nMapping Police Violence\nCalifornia Open Justice (open datasets)\nWashington Post Police Shootings Dataset\nU of Chicago’s Crime lab\nU Miss Library Guide for Crime Statistics\nFBI Crime Data Explorer\nVera Institute’s Incarceration Trends\nPrison Map - Geography of Incarceration\nCorrectional Procurement Contracts"
+  },
+  {
+    "objectID": "datasets.html#datasets",
+    "href": "datasets.html#datasets",
+    "title": "Data Sources",
+    "section": "",
+    "text": "Fatal Encounters\nMapping Police Violence\nCalifornia Open Justice (open datasets)\nWashington Post Police Shootings Dataset\nU of Chicago’s Crime lab\nU Miss Library Guide for Crime Statistics\nFBI Crime Data Explorer\nVera Institute’s Incarceration Trends\nPrison Map - Geography of Incarceration\nCorrectional Procurement Contracts"
+  },
+  {
+    "objectID": "datasets.html#data-collections",
+    "href": "datasets.html#data-collections",
+    "title": "Data Sources",
+    "section": "Data Collections",
+    "text": "Data Collections\nThese have more tha one dataset, but are not massive clearinghouses - Across Walls *This site can be a little difficult to navigate, but they have a lot of specific data not generally available elsewhere, like this final statements, last meals dataset. - and other repos by the Vera Institute"
+  },
+  {
+    "objectID": "datasets.html#data-clearinghouses",
+    "href": "datasets.html#data-clearinghouses",
+    "title": "Data Sources",
+    "section": "Data Clearinghouses",
+    "text": "Data Clearinghouses\n\nICPSR\nData.gov"
+  },
+  {
+    "objectID": "datasets.html#what-about-_______",
+    "href": "datasets.html#what-about-_______",
+    "title": "Data Sources",
+    "section": "What about _______?",
+    "text": "What about _______?\nThe Prison Policy Initative has a list of datasets they wish existed, but which do not."
+  },
+  {
+    "objectID": "lectures/template-lab.html#todays-plan",
+    "href": "lectures/template-lab.html#todays-plan",
+    "title": "LAB TEMPLATE",
+    "section": "Today’s Plan",
+    "text": "Today’s Plan\n\nReview XY"
+  },
+  {
+    "objectID": "lectures/template-lab.html#by-the-end-of-today-you-will-probably-know-how-to",
+    "href": "lectures/template-lab.html#by-the-end-of-today-you-will-probably-know-how-to",
+    "title": "LAB TEMPLATE",
+    "section": "By the end of today, you will (probably) know how to:",
+    "text": "By the end of today, you will (probably) know how to:"
+  },
+  {
+    "objectID": "lectures/template-lab.html#reference",
+    "href": "lectures/template-lab.html#reference",
+    "title": "LAB TEMPLATE",
+    "section": "Reference",
+    "text": "Reference\n\nBlockquote"
+  },
+  {
+    "objectID": "lectures/template-lab.html#executable-code-is-easy",
+    "href": "lectures/template-lab.html#executable-code-is-easy",
+    "title": "LAB TEMPLATE",
+    "section": "Executable Code is easy",
+    "text": "Executable Code is easy\n\n\nsomething"
+  },
+  {
+    "objectID": "lectures/template-lab.html#visual-code-is-easy",
+    "href": "lectures/template-lab.html#visual-code-is-easy",
+    "title": "LAB TEMPLATE",
+    "section": "Visual code is easy",
+    "text": "Visual code is easy\n# This is a comment on some python code.\nprint(\"something\")"
+  },
+  {
+    "objectID": "lectures/template-lab.html#key-takeaways",
+    "href": "lectures/template-lab.html#key-takeaways",
+    "title": "LAB TEMPLATE",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways"
+  },
+  {
+    "objectID": "lectures/template-lab.html#next-weeks-skill-review",
+    "href": "lectures/template-lab.html#next-weeks-skill-review",
+    "title": "LAB TEMPLATE",
+    "section": "Next week’s skill review",
+    "text": "Next week’s skill review\n\nTOPIC\nPRESENTER"
+  },
+  {
+    "objectID": "lectures/template-lab.html#next-steps",
+    "href": "lectures/template-lab.html#next-steps",
+    "title": "LAB TEMPLATE",
+    "section": "Next Steps",
+    "text": "Next Steps"
+  },
+  {
+    "objectID": "lectures/week2-c2.html#todays-agenda",
+    "href": "lectures/week2-c2.html#todays-agenda",
+    "title": "Week 2, Class 2",
+    "section": "Today’s Agenda",
+    "text": "Today’s Agenda\nEnd goal:\nA fork of the class repo on your laptop and open in Positron and previewing."
+  },
+  {
+    "objectID": "lectures/week2-c2.html#go-here",
+    "href": "lectures/week2-c2.html#go-here",
+    "title": "Week 2, Class 2",
+    "section": "Go here",
+    "text": "Go here\nhttps://github.com/drnikko/sds316"
+  },
+  {
+    "objectID": "lectures/week2-c2.html#click-fork",
+    "href": "lectures/week2-c2.html#click-fork",
+    "title": "Week 2, Class 2",
+    "section": "Click Fork",
+    "text": "Click Fork"
+  },
+  {
+    "objectID": "lectures/week2-c2.html#create-a-new-fork",
+    "href": "lectures/week2-c2.html#create-a-new-fork",
+    "title": "Week 2, Class 2",
+    "section": "Create a new fork",
+    "text": "Create a new fork"
+  },
+  {
+    "objectID": "lectures/week2-c2.html#get-the-repo-locally",
+    "href": "lectures/week2-c2.html#get-the-repo-locally",
+    "title": "Week 2, Class 2",
+    "section": "Get the repo locally!",
+    "text": "Get the repo locally!\nOn your fork’s repo page:"
+  },
+  {
+    "objectID": "lectures/week2-c2.html#clone-it",
+    "href": "lectures/week2-c2.html#clone-it",
+    "title": "Week 2, Class 2",
+    "section": "Clone it",
+    "text": "Clone it\nopen terminal\ncd /wherever/you/store/work\ngit clone git@github.com:drnikko/sds316.git\n\nssh problems?!"
+  },
+  {
+    "objectID": "lectures/week2-c2.html#look-at-it",
+    "href": "lectures/week2-c2.html#look-at-it",
+    "title": "Week 2, Class 2",
+    "section": "Look at it!",
+    "text": "Look at it!\nRemember that the terminal and the Finder/Explorer are just different ways of accessing the same folders."
+  },
+  {
+    "objectID": "lectures/week2-c2.html#lets-confirm",
+    "href": "lectures/week2-c2.html#lets-confirm",
+    "title": "Week 2, Class 2",
+    "section": "Let’s confirm",
+    "text": "Let’s confirm\n&lt;DEMO: make changes via one method and confirm via another&gt;"
+  },
+  {
+    "objectID": "lectures/week2-c2.html#open-positron",
+    "href": "lectures/week2-c2.html#open-positron",
+    "title": "Week 2, Class 2",
+    "section": "Open Positron",
+    "text": "Open Positron\n\nFile &gt; Open Folder\n&lt;wherever you put the repository&gt;\nOpen! (Manage, if necessary &gt; Trust)"
+  },
+  {
+    "objectID": "lectures/week2-c2.html#configure-python-virtual-environment",
+    "href": "lectures/week2-c2.html#configure-python-virtual-environment",
+    "title": "Week 2, Class 2",
+    "section": "Configure Python virtual environment",
+    "text": "Configure Python virtual environment\nopen terminal in Positron (this is the same terminal - just easier to get at & it starts in your directory)\npython3 -m venv venv\nsource venv/bin/activate"
+  },
+  {
+    "objectID": "lectures/week2-c2.html#install-packages",
+    "href": "lectures/week2-c2.html#install-packages",
+    "title": "Week 2, Class 2",
+    "section": "Install packages",
+    "text": "Install packages\nin the SAME terminal\npython3 -m pip install jupyter pandas pyprojroot matplotlib\nsuccess?"
+  },
+  {
+    "objectID": "lectures/week2-c2.html#with-the-time-thats-left",
+    "href": "lectures/week2-c2.html#with-the-time-thats-left",
+    "title": "Week 2, Class 2",
+    "section": "With the time that’s left",
+    "text": "With the time that’s left\n\ncreate a branch\nmake a change\ncommit change\npush to origin\nopen a pull request"
+  },
+  {
+    "objectID": "lectures/week2-c2.html#checkout",
+    "href": "lectures/week2-c2.html#checkout",
+    "title": "Week 2, Class 2",
+    "section": "Checkout",
+    "text": "Checkout\nOn a sheet of paper, write your name and then…\nas best as you can remember, write the steps to get a repository from github onto your local machine and open in Positron?"
+  },
+  {
+    "objectID": "lectures/week1-c1.html#todays-agenda",
+    "href": "lectures/week1-c1.html#todays-agenda",
+    "title": "Week 1, Class 1",
+    "section": "Today’s Agenda",
+    "text": "Today’s Agenda\n\nIntros\nSyllabus, Class Policies, etc\nSequence of events\nPIC"
+  },
+  {
+    "objectID": "lectures/week1-c1.html#your-turn",
+    "href": "lectures/week1-c1.html#your-turn",
+    "title": "Week 1, Class 1",
+    "section": "Your Turn",
+    "text": "Your Turn\n\nName, pronouns (if you want), class year\nWhere do you consider yourself from?\nIf time travel or teleportation were possible, where/when would you go?"
+  },
+  {
+    "objectID": "lectures/week1-c1.html#bjs-flow",
+    "href": "lectures/week1-c1.html#bjs-flow",
+    "title": "Week 1, Class 1",
+    "section": "BJS flow",
+    "text": "BJS flow\n\nhttps://bjs.ojp.gov/media/image/45506"
+  },
+  {
+    "objectID": "lectures/week1-c1.html#on-sticky-notes",
+    "href": "lectures/week1-c1.html#on-sticky-notes",
+    "title": "Week 1, Class 1",
+    "section": "On sticky notes",
+    "text": "On sticky notes\nWrite ONE question or idea per sticky note and put it roughly in the section where you think it fits."
+  },
+  {
+    "objectID": "lectures/week1-c1.html#checkout",
+    "href": "lectures/week1-c1.html#checkout",
+    "title": "Week 1, Class 1",
+    "section": "Checkout:",
+    "text": "Checkout:\nOn a sheet of paper, write your name and then:\nWrite FIVE questions you have about how the US criminal legal system works, why it works in a particular way, or what you’re interested in studying."
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/demo/index.html",
+      "/projects/template/index.html"
+    ]
+  },
+  {
+    "listing": "/lectures.html",
+    "items": [
+      "/lectures/week2-c1.html",
+      "/lectures/week2-c2.html",
+      "/lectures/week1-c1.html"
+    ]
+  }
+]
