@@ -23,7 +23,7 @@ import pandas as pd
 from pyprojroot import here # this helps us navigate tricky path stuff between local runs and quarto builds
 
 # Load the data using here() with the path from the project root
-file_path_state = here("projects/research_project/_data/flockperstate.csv")
+file_path_state = here("projects/leah/_data/flockperstate.csv")
 per_state_df = pd.read_csv(file_path_state, sep=',')  
 # removing the commas and making the column numeric 
 per_state_df["Flock Cameras"] = pd.to_numeric(per_state_df["Flock Cameras"].str.replace(",", ""))
@@ -41,7 +41,7 @@ Now I know the top five states with the most flock cameras. I can now focus my a
 Before I move on with this line, I want to figure out where the cameras are placed within the states. Specifically what kind of establishments have the cameras on their property. For this, I am going to explore the private operators of Flock cameras. Who invests in flock cameras, meaning where within the states/cities are they found? 
 
 ```{python}
-file_path_2 = here("projects/research_project/_data/private-operators.csv")
+file_path_2 = here("projects/leah/_data/private-operators.csv")
 df2 = pd.read_csv(file_path_2, sep=',')  
 
 # removing the commas and making the column numeric 
@@ -57,7 +57,7 @@ The most popular places for a Flock Camera are Lowe's and The Home Depot by a la
 
 ## Third Question: Cities in California and political party?
 ```{python}
-file_path_cities = here("projects/research_project/_data/findingflock-cameras-by-city.csv")
+file_path_cities = here("projects/leah/_data/findingflock-cameras-by-city.csv")
 df_cities = pd.read_csv(file_path_cities, sep=',') 
 
 # Source - https://stackoverflow.com/a/17071908 
@@ -81,7 +81,7 @@ Santa Rosa: Sonoma County
 Now I can see which party won in the 2024 election within those counties. I know historically California is a very blue state so I am expecting the democratic party, in this case Kamala Harris, to be the winner. 
 
 ```{python}
-file_path_election = here("projects/research_project/_data/Presidential-Election-Results-by-US-County-2024.csv")
+file_path_election = here("projects/leah/_data/Presidential-Election-Results-by-US-County-2024.csv")
 df_election = pd.read_csv(file_path_election, sep=',')  
 
 # Source - https://stackoverflow.com/a/17071908 
@@ -94,7 +94,7 @@ As I suspected the democratic party has won in the last three elections for all 
 
 ## Fourth Question: Immigration?
 ```{python}
-file_path_immigration = here("projects/research_project/_data/mpi-data-hub_immigrants_n-percent-us-population-by-state-2024.csv")
+file_path_immigration = here("projects/leah/_data/mpi-data-hub_immigrants_n-percent-us-population-by-state-2024.csv")
 df_immigration = pd.read_csv(file_path_immigration, sep=',')  
 # accidentally had 6000 extra empty lines from the excel file that I downloaded whoops!
 df_immigration = df_immigration.drop(df_immigration.index[52:6225])

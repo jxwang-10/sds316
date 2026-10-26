@@ -5,11 +5,13 @@ execute:
   code-fold: true
 ---
 
-## Phase 1 Research Questions
+## Phase 2 Research Questions
 
-1. Who is supporting Flock cameras and who is against? 
-2. Is there an association between the results of the 2024 election and which states are against Flock cameras?
-3. What are the safeguards in place and who creates them? 
+1. Is there a relationship between Flock camera usage and ICE detainment?
+
+2. What is the motivation behind the specific placement of Flock cameras?
+
+3. Is California being targeted with Flock cameras because of the immigrant population? 
 
 ## Personal Motivation
 
@@ -21,11 +23,8 @@ want to figure out what it is.
 
 
 ## Broader Relevance
-These answers will matter to others because there is a large outrage about Flock cameras with missions such as ‘deflock’ popping up to show 
-people how to break them. There is a large group of people that believe that these cameras are not right and the system is being abused. The 
-reason it is important to do this research is we are in new territory. Flock camera usage skyrocketed in the last year and we have to 
-understand why. I have not seen many connections to political parties in my research thus far which is why I want to draw that connection. We 
-have to know who is benefiting from this system and what their goal is. 
+
+These answers will matter to others because there is a large outrage about Flock cameras with missions such as ‘deflock’ popping up to show people how to break them. There is a large group of people that believe that these cameras are not right and the system is being abused. The reason it is important to do this research is we are in new territory. Flock camera usage skyrocketed in the last year and we have to understand why. There has also been an intense spike in ICE detainment in the last year, with these officers needing to use some sort of servailance to be able to find the people they are looking for. 
 
 
 
@@ -41,16 +40,6 @@ Link to three example projects that are related to your questions or how you'd l
 
 ## Relevant Literature
 
-Build a **ten** item literature review for work related to your questions. 
-
-As you consider which 10 to include, try to satisfy these criteria:
-
-- 1 - 2 written by someone on the inside or system impacted
-- 3ish non-academic sources
-- at least 5 academic sources
-- no more than 2 items that we've discussed in class / from the syllabus
-
-No need to include a full citation.  Instead, list them:
 
 **[Independent Study: Vehicle Thefts Fell 11% After Flock Cameras Went Live](https://www.flocksafety.com/blog/independent-study-vehicle-thefts-fell-11-after-flock-cameras-went-live):** Flock released this study on its safety website explaining how
 vehicle theft is decreased since the implementation. They made in clear in multiple areas that Flock itself did not fund or include itself in this. This article shows how Flock views the positive sides of the cameras.  

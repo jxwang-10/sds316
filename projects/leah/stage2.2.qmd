@@ -15,19 +15,19 @@ import pandas as pd
 from pyprojroot import here # this helps us navigate tricky path stuff between local runs and quarto builds
 
 # Loading all of the datasets I will need 
-file_path_state = here("projects/research_project/_data/flockperstate.csv")
+file_path_state = here("projects/leah/_data/flockperstate.csv")
 per_state_df = pd.read_csv(file_path_state, sep=',')  
 
-file_path_private = here("projects/research_project/_data/private-operators.csv")
+file_path_private = here("projects/leah/_data/private-operators.csv")
 df_priv = pd.read_csv(file_path_private, sep=',')  
 
-file_path_cities = here("projects/research_project/_data/findingflock-cameras-by-city.csv")
+file_path_cities = here("projects/leah/_data/findingflock-cameras-by-city.csv")
 df_cities = pd.read_csv(file_path_cities, sep=',') 
 
-file_path_election = here("projects/research_project/_data/Presidential-Election-Results-by-US-County-2024.csv")
+file_path_election = here("projects/leah/_data/Presidential-Election-Results-by-US-County-2024.csv")
 df_election = pd.read_csv(file_path_election, sep=',')  
 
-file_path_immigration = here("projects/research_project/_data/mpi-data-hub_immigrants_n-percent-us-population-by-state-2024.csv")
+file_path_immigration = here("projects/leah/_data/mpi-data-hub_immigrants_n-percent-us-population-by-state-2024.csv")
 df_immigration = pd.read_csv(file_path_immigration, sep=',')  
 # accidentally had 6000 extra empty lines from the excel file that I downloaded whoops!
 df_immigration = df_immigration.drop(df_immigration.index[52:6225])
