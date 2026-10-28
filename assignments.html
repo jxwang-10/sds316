@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -77,10 +77,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-283806461d87d7bdc96c8e860487c4d3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5d8dc168fd7aa616d26decb29c56e770.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -135,12 +135,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./assignments.html" aria-current="page"> <i class="bi bi-file-earmark" role="img">
+    <a class="nav-link active" href="./assignments.html" aria-current="page"> <i class="bi bi-list-task" role="img">
 </i> 
 <span class="menu-text">Assignments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./lectures.html"> <i class="bi bi-file-earmark" role="img">
+    <a class="nav-link" href="./lectures.html"> <i class="bi bi-chat" role="img">
 </i> 
 <span class="menu-text">Lectures</span></a>
   </li>  
@@ -148,6 +148,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./schedule.html"> <i class="bi bi-calendar-minus" role="img">
 </i> 
 <span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects/index.html"> <i class="bi bi-rocket-takeoff" role="img">
+</i> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -354,7 +359,8 @@ Important
 <section id="midterm-and-final-evaluations" class="level2">
 <h2 class="anchored" data-anchor-id="midterm-and-final-evaluations">Midterm and Final Evaluations</h2>
 <p>The midterm and final checkins will be a mix between a conversation and an oral exam. You’ll schedule a 20-minute block to come to my office where we will talk generally about how the class is going for you and how your project is going. I’ll then ask you to respond to two questions, one about the reading, and one about the technical stack we’re using. All questions will be shared at least a week before the exams.</p>
-<p>Midterm Conversations will happen between <strong>October 14 and 19</strong>. Note no class 10/21 Finals Conversations will happen during finals week.</p>
+<p>Midterm Conversations will happen between <strong>October 14 and 19</strong>. Note that we have no class on 10/21<br>
+Finals Conversations will happen <em>in person during the final exam period.</em></p>
 <section id="how-its-graded-3" class="level3">
 <h3 class="anchored" data-anchor-id="how-its-graded-3">How its graded</h3>
 <p>These are graded credit/no credit along the following dimensions</p>
@@ -365,17 +371,22 @@ Important
 <li>demonstrated an ablilty to talk through the technical answer with at least about 75% accuracy</li>
 <li>demonstrated an ability to respond to the reading question citing evidence from the text</li>
 </ul>
-<!--
-### Extra credit alert!
-If you are worried about your grade in this class, there will be extra credit opportunities available.  These could include class-contribution activities like:
 
-- Show us two data visualizations using matplotlib after we've set it up
-- Walk us through opening a github pull request 
-- Explain the github fork/branch process
-- Demonstrate making github commits in the terminal
-- Show us how to set up python notebooks in Positron
-- Demonstrate 3 Quality of Life (QoL) terminal improvements or Positron customizations you've made
--->
+<section id="midterm-questions" class="level4">
+<h4 class="anchored" data-anchor-id="midterm-questions">Midterm Questions</h4>
+<p>I’ll ask you a question about the <strong>reading</strong>, chosen from the following questions. I might also ask you to elaborate on your answer.</p>
+<ul>
+<li><p>How has big data changed the way law enforcement officials do their jobs? Support with examples from the reading</p></li>
+<li><p>Describe one of the technological systems that Brayne studies in the book. Where is it implemented? How is it received by officers and community members?</p></li>
+<li><p>How do police respond to being subject to these surveillance systems? Support with examples from the reading.</p></li>
+</ul>
+<p>I’ll ask you a <strong>technical</strong> question, chosen from the following questions. I might also ask you to elaborate on your answer:</p>
+<ul>
+<li><p>What’s the purpose of a virtual environment? How do they work and when are they useful and not useful?</p></li>
+<li><p>Walk me through the git lifecycle of adding a new feature to your project &amp; getting it merged into the main class repo</p></li>
+<li><p>Describe the steps (in Python) to load and clean a dataset in advance of analysis.</p></li>
+</ul>
+</section>
 </section>
 </section>
 <section id="research-project" class="level2">
@@ -417,12 +428,48 @@ If you are worried about your grade in this class, there will be extra credit op
 <li><p>discussing your results with your research cluster</p></li>
 <li><p>exploring data visualizations</p></li>
 </ul>
-<section id="key-deliverables" class="level4">
-<h4 class="anchored" data-anchor-id="key-deliverables">Key Deliverables</h4>
-<p><em>More details about these deliverables and what you’ll turn in will appear closer to the due date!</em></p>
+<section id="final-deliverable-1" class="level4">
+<h4 class="anchored" data-anchor-id="final-deliverable-1">Final Deliverable</h4>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>You will lose 10% per day this is late, beginning at 12:01 on Thursday morning (aka late Wednesday night)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p>By 11:59pm EST on <strong>Wednesday October 21</strong>, you will need to have an open PR that:</p>
+<ol type="1">
+<li><em>builds</em>. This means that if you run <code>quarto preview</code>, everything works okay</li>
+<li><em>has no merge conflicts</em>. This means that when I go to merge it in, it’s not in conflict with any code from main. This should be trivial since you’re working in your own folder now</li>
+<li><em>contains the necessary content (below)</em>. Is everything there? Are you <em>sure</em>? Double check one more time so that we don’t go back and forth (and you don’t lose points).</li>
+</ol>
+<p><strong>Your PR should contain:</strong></p>
 <ul>
-<li><p>Project and Report scaffold</p></li>
-<li><p>Updated (if necessary) research questions / investigation description</p></li>
+<li><p>An up-to-date <code>research-plan.qmd.</code> If your questions haven’t changed, you probably don’t need to edit this</p></li>
+<li><p>An <code>index.qmd</code> file that links to ALL of your other pages. See the code in <code>projects/template-stage2/index.qmd</code> for examples. Think about browsing your classmates’ projects via the browser - you need links to know what’s there.</p></li>
+<li><p>One or two files (up to you) with <strong>8</strong> questions asked and answered. These questions should contain some text, and some code – that is, I am not interested in the <em>answers</em> to the questions, but in your thinking and the code you’re writing.</p>
+<ul>
+<li>Some folks are doing work in files called <code>stage2.qmd</code> and <code>stage2.2.qmd</code>, and some are putting them all into <code>stage2.qmd</code>. Either is fine</li>
+</ul></li>
+<li><p>A completed <code>stage2-writing.qmd</code> file. Follow the instructions in the file <code>projects/template-stage2/stage2-writing.qmd</code>!</p></li>
+</ul>
+<p><strong>Your PR should NOT contain:</strong></p>
+<ul>
+<li><p><del><em>any</em> of your commits from Stage 1 – only new commits and new/updated files</del></p>
+<ul>
+<li><del>The easiest way to achieve this is to make sure that you’re on a different branch from your stage 1 work</del></li>
+<li><strong>Don’t worry about this!!!</strong></li>
+</ul></li>
+<li><p><em>any placeholder text.</em> Look at your project on the <a href="https://nikkostevens.com/sds316/projects/">project listing page</a>. Does it look complete? Do the images load? Are the tags correct? Do ANY of your files have any left over placeholder content? (check!!! there were a lot on the <code>research-plan.qmd</code> files that I saw)</p>
+<ol type="1">
+<li>NOTE: You can view previews locally <code>quarto preview</code> - just visit <code>/projects</code> at your localhost’s URL and see how your project looks</li>
+</ol></li>
 </ul>
 </section>
 </section>
@@ -435,8 +482,8 @@ If you are worried about your grade in this class, there will be extra credit op
 <li><p>Making decisions about the best ways to visualize information</p></li>
 <li><p>Telling stories with data / questioning what data may be telling us</p></li>
 </ul>
-<section id="key-deliverables-1" class="level4">
-<h4 class="anchored" data-anchor-id="key-deliverables-1">Key Deliverables</h4>
+<section id="key-deliverables" class="level4">
+<h4 class="anchored" data-anchor-id="key-deliverables">Key Deliverables</h4>
 <p><em>More details about these deliverables and what you’ll turn in will appear closer to the due date!</em></p>
 <ul>
 <li><p>final-first-draft report</p></li>
@@ -447,14 +494,14 @@ If you are worried about your grade in this class, there will be extra credit op
 <section id="stage-4---reflection-refinement" class="level3">
 <h3 class="anchored" data-anchor-id="stage-4---reflection-refinement">Stage 4 - Reflection + Refinement</h3>
 <p><strong>Due December 15, 2026</strong></p>
-<p>During the first stage of the project, we’re practicing:</p>
+<p>During the final stage of the project, we’re practicing:</p>
 <ul>
 <li><p>revising key findings</p></li>
 <li><p>viewing and critiquing others’ work</p></li>
 <li><p>reflecting on the process and what we’ve learned</p></li>
 </ul>
-<section id="key-deliverables-2" class="level4">
-<h4 class="anchored" data-anchor-id="key-deliverables-2">Key Deliverables</h4>
+<section id="key-deliverables-1" class="level4">
+<h4 class="anchored" data-anchor-id="key-deliverables-1">Key Deliverables</h4>
 <ul>
 <li><p>final report</p></li>
 <li><p>Updated <code>g.cluster-name.qmd</code> file to list all of the projects from the group.</p></li>
@@ -553,7 +600,7 @@ If you are worried about your grade in this class, there will be extra credit op
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/jxwang-10\.github\.io\/sds316\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
