@@ -256,7 +256,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="fifth-question-which-states-have-the-lowest-flock-usage" class="level2">
 <h2 class="anchored" data-anchor-id="fifth-question-which-states-have-the-lowest-flock-usage">Fifth question: which states have the lowest flock usage?</h2>
 <p>After my initial work, I want to switch gears to the other end of the equation and see if the same is true, states with less flock cameras have less population of immigrants.</p>
-<div id="7f1761ad" class="cell" data-execution_count="1">
+<div id="2a61d049" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pyprojroot <span class="im">import</span> here <span class="co"># this helps us navigate tricky path stuff between local runs and quarto builds</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -283,7 +283,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>df_priv[<span class="st">"Cameras"</span>] <span class="op">=</span> pd.to_numeric(df_priv[<span class="st">"Cameras"</span>].<span class="bu">str</span>.replace(<span class="st">","</span>, <span class="st">""</span>))</span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>df_immigration <span class="op">=</span> df_immigration.drop(df_immigration.index[<span class="dv">52</span>:<span class="dv">6225</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="15bc48da" class="cell" data-execution_count="2">
+<div id="ff49ad87" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># sorting by the least amount of flock cameras </span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>sort <span class="op">=</span> per_state_df.sort_values(by<span class="op">=</span>[<span class="st">"Flock Cameras"</span>], ascending<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -302,7 +302,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="sixth-question-immigration-ranking-per-state" class="level2">
 <h2 class="anchored" data-anchor-id="sixth-question-immigration-ranking-per-state">Sixth Question: Immigration Ranking per State?</h2>
 <p>Previously I only inquired about the top five states with the most flock cameras. I want to now see the actual rankings of immigration percentage per population of each state.</p>
-<div id="48387d96" class="cell" data-execution_count="3">
+<div id="9d7d1c4f" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#making a subset of the originial dataset with just the share and the state and taking out the united states as a whole</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>sorted_immigration <span class="op">=</span> df_immigration[[<span class="st">"State"</span>, <span class="st">"Immigrant Share of Total State Population24"</span>]]</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>sorted_immigration <span class="op">=</span> sorted_immigration.iloc[<span class="dv">1</span>:]</span>
@@ -371,7 +371,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="seventh-question-merging-datasets-together-figuring-out-graph" class="level2">
 <h2 class="anchored" data-anchor-id="seventh-question-merging-datasets-together-figuring-out-graph">Seventh Question: Merging Datasets together, figuring out graph</h2>
 <p>The first thing I need to do is combine the two datasets that have the population share and the number of flock cameras. I think the only way I can do this right now is by having the states ordered on the x axis in the least to greatest share of the population.</p>
-<div id="b5e157de" class="cell" data-execution_count="4">
+<div id="65e79693" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># when I first ran the merge alabama and alaska did not merge because of a trailing space at the end of the two values so I have to get </span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># rid of that first!</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>per_state_df[<span class="st">"State"</span>] <span class="op">=</span> per_state_df[<span class="st">"State"</span>].<span class="bu">str</span>.strip()</span>
@@ -487,7 +487,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Now I have a dataframe that I can make a graph from, I think for the first one I am just going to order the immigration share first and then graph the flock cameras.</p>
-<div id="eb886890" class="cell" data-execution_count="5">
+<div id="df015eb5" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>merged_df <span class="op">=</span> merged_df.sort_values(by<span class="op">=</span><span class="st">"Immigrant Share of Total State Population24"</span>, ascending<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(merged_df)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(rank_immigration) <span class="co">#confirming the order is correct for both </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -655,7 +655,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="eigth-question-graphing" class="level2">
 <h2 class="anchored" data-anchor-id="eigth-question-graphing">Eigth Question: Graphing?</h2>
 <p>I am going to make two bar charts and compare them to see the trends and if there is any relationship.</p>
-<div id="a5972dd3" class="cell" data-execution_count="6">
+<div id="d7d0f059" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">#creating a bar chart of the flock cameras per state in the order of least to most share of immigrants </span></span>
@@ -675,11 +675,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>There is a general positive trend but I want to explore it more and see if it is statistically significant.</p>
-<div id="cf6b376d" class="cell" data-execution_count="7">
+<div id="07eba5be" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#I now want to see the opposite </span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>mdf <span class="op">=</span> merged_df.sort_values(by<span class="op">=</span><span class="st">"Flock Cameras"</span>, ascending<span class="op">=</span><span class="va">True</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="d99a44e5" class="cell" data-execution_count="8">
+<div id="caa4c66e" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co">#creating a bar chart of the flock cameras per state in the order of least to most share of immigrants </span></span>

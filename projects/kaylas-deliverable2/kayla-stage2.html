@@ -219,7 +219,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<div id="279b4d36" class="cell" data-execution_count="1">
+<div id="a3f19de8" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pyprojroot <span class="im">import</span> here </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -312,7 +312,7 @@ Name: incarcerated_black, dtype: float64</code></pre>
 <p>Other than that, we found out that the average Black incarerated population across multiple 2022 observations is highest in Texas, which also tracked with the highest average Black incarcerated population over multiple observations across 1990-2022, which was also Texas.</p>
 <p>I do need to do some more data cleaning, but I did not want to clean too much during this round of EDA in case I hated the data set.</p>
 <p>Question 5 What happens to states when I remove inferred data?</p>
-<div id="8ad814a9" class="cell" data-execution_count="2">
+<div id="6f8060b9" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># created a new df of just raw data in 2022 by filtering the data_or_inferred column in the most recent year df to raw data</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>raw_2022 <span class="op">=</span> most_recent_year[</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    most_recent_year[<span class="st">'data_or_inferred'</span>] <span class="op">==</span> <span class="st">'raw data'</span></span>
@@ -373,7 +373,7 @@ Tennessee               1
 Name: count, dtype: int64</code></pre>
 </div>
 </div>
-<div id="8caeb55f" class="cell" data-execution_count="3">
+<div id="966bc25b" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># cross tab of state and raw data vs inferred data to see the count of raw v inferred data break down of states in 2022 </span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>pd.crosstab(</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    most_recent_year[<span class="st">'state'</span>],</span>
@@ -719,7 +719,7 @@ Name: count, dtype: int64</code></pre>
 </div>
 <p>Okay, so maybe I should not remove inferred data, if I do, I would basically be removing two states: Virginia and Rhode Island, which maybe is not helpful for my comparison. Also, this shows how uneven the current spread of data is, so it’s a methodical question of if I should remove inferred counts or not. For now, I will not. This does provide a clearer direction for my EDA, instead of looking at raw counts and averages, I should explore proportions.</p>
 <p>Question 6 Which states had the highest proportion of Black incarceration in 2022, on average</p>
-<div id="4f5fc978" class="cell" data-execution_count="4">
+<div id="f58938e7" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#making a copy because I will be directly manipulating the df </span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>most_recent_year <span class="op">=</span> most_recent_year.copy()</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -751,7 +751,7 @@ Name: black_proportion, dtype: float64</code></pre>
 <p>Oh wow, this changes the story a lot. When we take into account the states incarcerated population, the states that we saw earlier (Florida, Texas, California) are not in the top 10, including DC (which is not a state, I mentioned earlier on excluding it, but we’ll save that for more formal data cleaning and based off of literature research since that’s a methodology decision).</p>
 <p>What’s interesting about this is that you can see both southern and northern states, so it isn’t just southern states with higher incarcerated Black individuals.</p>
 <p>Question 7: How do white and black incarerated populations compare within each state</p>
-<div id="cd9f5e8f" class="cell" data-execution_count="5">
+<div id="16c13779" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># same code, just replaced black with white</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>most_recent_year <span class="op">=</span> most_recent_year.copy()</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -821,7 +821,7 @@ Wyoming                       0.049022          0.746909</code></pre>
 </div>
 </div>
 <p>Question 8: Within the top 10 states of Black incarceration, what are the incarceration rates for White individuals?</p>
-<div id="9c9b4824" class="cell" data-execution_count="6">
+<div id="cf87647e" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># this lists the values from the top 10 states </span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>race_compare_2022.loc[[<span class="st">'District of Columbia'</span>,    </span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="st">'Maryland'</span>, <span class="st">'Louisiana'</span>, <span class="st">'New Jersey'</span>, <span class="st">'South Carolina'</span>, <span class="st">'Mississippi'</span>, <span class="st">'Georgia'</span>, <span class="st">'Delaware'</span>, <span class="st">'Virginia'</span>, <span class="st">'Illinois'</span> ]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
