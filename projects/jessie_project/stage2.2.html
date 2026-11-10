@@ -268,7 +268,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="dataset" class="level3">
 <h3 class="anchored" data-anchor-id="dataset">Dataset</h3>
 <p>The dataset is <a href="https://data.census.gov/table/DECENNIALDHC2020.P3?q=P3&amp;g=040XX00US12$1600000&amp;d=DEC+Demographic+and+Housing+Characteristics">Florida Cities</a>. It is stored in the <code>data</code> folder. I also have another dataset to combine with it. Last time, we saw that Texas and Florida have the most amount of prisons, with Florida with the most federal prisons. So that’s why I chose to get demographics for Florida.</p>
-<div id="a6cd26b1" class="cell" data-execution_count="1">
+<div id="d0695df2" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pyprojroot <span class="im">import</span> here <span class="co"># this helps us navigate tricky path stuff between local runs and quarto builds</span></span>
@@ -518,7 +518,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="wrangling" class="level3">
 <h3 class="anchored" data-anchor-id="wrangling">Wrangling</h3>
 <p>Let’s wrangle the new data to be useful for us.</p>
-<div id="c22e6269" class="cell" data-execution_count="2">
+<div id="38c7720d" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df_new <span class="op">=</span> df1.transpose()</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -682,7 +682,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="research-question">Research Question</h3>
 <p>My first research question is <em>“What are the demographics of each location?”</em> Which has a very wide scope. And so, I am focusing on Florida.</p>
 <p>Let’s adjust the old data.</p>
-<div id="9545a772" class="cell" data-execution_count="3">
+<div id="1e4da2fd" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>rows <span class="op">=</span> df[df[<span class="st">"stateshortname"</span>] <span class="op">!=</span> <span class="st">"FL"</span>].index</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df.drop(rows, inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df_new.head(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -836,7 +836,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="what-are-the-demographics-of-florida" class="level3">
 <h3 class="anchored" data-anchor-id="what-are-the-demographics-of-florida">What are the demographics of Florida?</h3>
 <p>Let’s focus on Black people for now, as they are the most affected by the prison system.</p>
-<div id="e1ced278" class="cell" data-execution_count="4">
+<div id="4ac86c18" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df_new.iloc[:, <span class="dv">3</span>] <span class="op">=</span> df_new.iloc[:, <span class="dv">3</span>].<span class="bu">str</span>.replace(<span class="st">','</span>, <span class="st">''</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span>  <span class="bu">range</span>(<span class="bu">len</span>(df_new.iloc[:, <span class="dv">3</span>])):</span>
@@ -866,7 +866,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="what-cities-in-florida-have-prisons" class="level3">
 <h3 class="anchored" data-anchor-id="what-cities-in-florida-have-prisons">What Cities in Florida have prisons?</h3>
-<div id="ae5f06d1" class="cell" data-execution_count="5">
+<div id="41508f0f" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"address"</span>].head(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>44                     3625 FCI ROAD, MARIANNA, FL 32446
@@ -896,7 +896,7 @@ Name: address, dtype: str</code></pre>
 </section>
 <section id="miami-demographics-black-people---percentage" class="level3">
 <h3 class="anchored" data-anchor-id="miami-demographics-black-people---percentage">Miami Demographics: Black people - percentage</h3>
-<div id="9badc908" class="cell" data-execution_count="6">
+<div id="975812ed" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>l_city <span class="op">=</span> [<span class="st">"Marianna"</span>, <span class="st">"Miami"</span>, <span class="st">"Pensacola"</span>, <span class="st">"Tallahassee"</span>, <span class="st">"Milton"</span>, <span class="st">"Deerfield Beach"</span>, <span class="st">"Moor Haven"</span>, <span class="st">"South Bay"</span>, <span class="st">"Boca Raton"</span>]</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>miami <span class="op">=</span> df_new[df_new[<span class="st">'city'</span>].<span class="bu">str</span>.contains(<span class="st">"Miami"</span>)]</span>
@@ -910,7 +910,7 @@ Name: address, dtype: str</code></pre>
 <span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>total_b_m <span class="op">=</span> np.nansum(miami.iloc[:, <span class="dv">3</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="9cc50592" class="cell" data-execution_count="7">
+<div id="d5706406" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span>  <span class="bu">range</span>(<span class="bu">len</span>(miami.iloc[:, <span class="dv">1</span>])):</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="bu">type</span>(miami.iloc[i, <span class="dv">1</span>]) <span class="op">==</span> <span class="bu">float</span>:</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">continue</span></span>
@@ -930,7 +930,7 @@ Name: address, dtype: str</code></pre>
 </section>
 <section id="south-bay" class="level3">
 <h3 class="anchored" data-anchor-id="south-bay">South Bay</h3>
-<div id="e835167c" class="cell" data-execution_count="8">
+<div id="47c9e527" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>s_bay <span class="op">=</span> df_new[df_new[<span class="st">'city'</span>].<span class="bu">str</span>.contains(<span class="st">"South Bay"</span>)]</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -946,7 +946,7 @@ Name: address, dtype: str</code></pre>
 <pre><code>3159</code></pre>
 </div>
 </div>
-<div id="4f97402d" class="cell" data-execution_count="9">
+<div id="28868abc" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span>  <span class="bu">range</span>(<span class="bu">len</span>(s_bay.iloc[:, <span class="dv">1</span>])):</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="bu">type</span>(s_bay.iloc[i, <span class="dv">1</span>]) <span class="op">==</span> <span class="bu">float</span>:</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">continue</span></span>

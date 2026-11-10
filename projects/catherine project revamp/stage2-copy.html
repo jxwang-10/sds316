@@ -289,7 +289,7 @@ Note
 <section id="q1-race-of-victim" class="level2">
 <h2 class="anchored" data-anchor-id="q1-race-of-victim">Q1: race of victim</h2>
 <p>I am particularly curious about the race of the victim in these domestic violence reports. I wonder if there is any correlation between the race of the victim and how often/if police file an incident reports.</p>
-<div id="fa65b609" class="cell" data-execution_count="1">
+<div id="31d6187e" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pyprojroot <span class="im">import</span> here</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -315,7 +315,7 @@ BLACK HISPANIC                      1284
 Name: count, dtype: int64</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/tmp/ipykernel_3241/3806392317.py:6: DtypeWarning: Columns (10: Suspect Reported Age) have mixed types. Specify dtype option on import or set low_memory=False.
+<pre><code>/tmp/ipykernel_3003/3806392317.py:6: DtypeWarning: Columns (10: Suspect Reported Age) have mixed types. Specify dtype option on import or set low_memory=False.
   df = pd.read_csv(file_path)</code></pre>
 </div>
 </div>
@@ -323,7 +323,7 @@ Name: count, dtype: int64</code></pre>
 </section>
 <section id="q2-race-of-suspect" class="level2">
 <h2 class="anchored" data-anchor-id="q2-race-of-suspect">Q2: race of suspect</h2>
-<div id="cf28bfb3" class="cell" data-execution_count="2">
+<div id="36ef84b0" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># breakdown of suspect race</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>count_sr <span class="op">=</span> df[<span class="st">"Suspect Race"</span>].value_counts()</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -346,7 +346,7 @@ Name: count, dtype: int64</code></pre>
 <section id="q3-victim-suspect-race-correlationpatterns" class="level2">
 <h2 class="anchored" data-anchor-id="q3-victim-suspect-race-correlationpatterns">Q3: victim-suspect race correlation/patterns?</h2>
 <p>I want to see if there is any correlation between the race of both suspect and victim in concert with each other. Is it possible that, in cases where the victim is white and/or the suspect is Black, the incident is more likely to be reported? Based purely off my intuition of the role racial bias may play in police reports.</p>
-<div id="6412441c" class="cell" data-execution_count="3">
+<div id="60ae13c7" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>vsr_counts <span class="op">=</span> (</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df.groupby([<span class="st">"Victim Race"</span>, <span class="st">"Suspect Race"</span>]).size().sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>)</span>
@@ -408,7 +408,7 @@ dtype: int64</code></pre>
 <section id="q4-borough" class="level2">
 <h2 class="anchored" data-anchor-id="q4-borough">Q4: borough?</h2>
 <p>I want to see what the breakdown of the number of incidents are per borough, which will lead into my next question about the proportion of suspects of a given race per borough.</p>
-<div id="d41fb2ae" class="cell" data-execution_count="4">
+<div id="5f9f0b23" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># number of incidents per borough?</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>count_borough <span class="op">=</span> df[<span class="st">"Borough Name"</span>].value_counts()</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -429,7 +429,7 @@ Name: count, dtype: int64</code></pre>
 <section id="q5-intimate-relationship" class="level2">
 <h2 class="anchored" data-anchor-id="q5-intimate-relationship">Q5: intimate relationship?</h2>
 <p>I thought it might be a good idea to see how many of these incidents occurred within an established intimate/domestic relationship. I’m not sure yet how I want to relate this to race, but it is an interesting variable and I’m curious as to why they included it/what their definition of domestic violence is? Is the definition in this dataset extended to be between family members (ie. parent-child) too?</p>
-<div id="31bcea7d" class="cell" data-execution_count="5">
+<div id="66fdd913" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># intimate relationship</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>count_ir <span class="op">=</span> df[<span class="st">"Intimate Relationship Flag"</span>].value_counts()</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -450,7 +450,7 @@ Name: count, dtype: int64</code></pre>
 <section id="q6-offense-type" class="level2">
 <h2 class="anchored" data-anchor-id="q6-offense-type">Q6: Offense Type</h2>
 <p>To clarify my previous question, I obtained the counts of each specific type of domestic violence offense/crime.</p>
-<div id="1704ca7a" class="cell" data-execution_count="6">
+<div id="67f6c7c7" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># offense type</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>count_ot <span class="op">=</span> df[<span class="st">"Offense Type"</span>].value_counts()</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -469,7 +469,7 @@ Name: count, dtype: int64</code></pre>
 <section id="q7-poverty" class="level2">
 <h2 class="anchored" data-anchor-id="q7-poverty">Q7: Poverty</h2>
 <p>I need literature on the correlation between poverty, race, and the frequency of domestic violence. I have an intuitive belief (from lived experience and observation) that poverty has a lot to do with how often domestic violence occurs, and based on historical discrimination and structural violence that persists to this day it is inextricably tied up with race as well.</p>
-<div id="f45df194" class="cell" data-execution_count="7">
+<div id="e52077a1" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># poverty counts</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>count_poverty <span class="op">=</span> df[<span class="st">"Poverty"</span>].value_counts()</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -497,7 +497,7 @@ Name: count, dtype: float64</code></pre>
 </section>
 <section id="q8-race-and-sex" class="level2">
 <h2 class="anchored" data-anchor-id="q8-race-and-sex">Q8: Race and Sex</h2>
-<div id="bf11182b" class="cell" data-execution_count="8">
+<div id="88d2a662" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>victim_proportions <span class="op">=</span> (pd.crosstab(df[<span class="st">"Victim Race"</span>], df[<span class="st">"Victim Sex"</span>], normalize<span class="op">=</span><span class="st">"all"</span>) <span class="op">*</span> <span class="dv">100</span>)</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>

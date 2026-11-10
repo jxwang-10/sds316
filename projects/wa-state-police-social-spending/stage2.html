@@ -264,7 +264,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>I am using three datasets to explore my research questions about spending and crime rates in Washington state counties.</p>
 <section id="how-many-offenses-were-logged-in-each-county-in-2025" class="level3">
 <h3 class="anchored" data-anchor-id="how-many-offenses-were-logged-in-each-county-in-2025">1. How many offenses were logged in each county in 2025?</h3>
-<div id="7db4bcb1" class="cell" data-execution_count="1">
+<div id="f659aa06" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#dependencies</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -276,7 +276,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>crime_2025 <span class="op">=</span> pd.read_csv(file_path)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>‘crime_2025’ is a dataset containing observations of all offenses logged by every police department in Washington in 2025. Each offense also notes the county corresponding to the department that logged it. I want to sum the number of offenses by county.</p>
-<div id="030a0c3c" class="cell" data-execution_count="2">
+<div id="7e06b6b9" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>crime_2025.columns.tolist()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>['ORI',
@@ -289,7 +289,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  'Location']</code></pre>
 </div>
 </div>
-<div id="814a3b89" class="cell" data-execution_count="3">
+<div id="ee9d053c" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#cleaning </span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">#dropping columns I'm not interested in</span></span>
@@ -314,7 +314,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="how-many-offenses-were-violent-and-how-many-were-nonviolent" class="level3">
 <h3 class="anchored" data-anchor-id="how-many-offenses-were-violent-and-how-many-were-nonviolent">2. How many offenses were violent and how many were nonviolent?</h3>
 <p>Now I’m going to use the ‘crime_2025_clean’ data that lists all offenses to sum by violent and nonviolent crime.</p>
-<div id="8d4f3b9c" class="cell" data-execution_count="4">
+<div id="a40b704b" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#let's see all of the offenses</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>crime_2025_clean[<span class="st">"Offense"</span>].unique()</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -352,14 +352,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="how-much-do-washington-state-counties-spend-on-law-enforcement-activities-how-much-do-counties-spend-on-social-services" class="level3">
 <h3 class="anchored" data-anchor-id="how-much-do-washington-state-counties-spend-on-law-enforcement-activities-how-much-do-counties-spend-on-social-services">3. How much do Washington state counties spend on law enforcement activities? How much do counties spend on social services?</h3>
-<div id="954e7c99" class="cell" data-execution_count="5">
+<div id="e425e865" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>file_lawenf <span class="op">=</span> here(<span class="st">"projects/wa-state-police-social-spending/_data/fit_lawenforcementactivities.csv"</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>fit_lawenforcement <span class="op">=</span> pd.read_csv(file_lawenf, skiprows<span class="op">=</span><span class="dv">6</span>)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>file_social <span class="op">=</span> here(<span class="st">"projects/wa-state-police-social-spending/_data/fit_socialservices.csv"</span>)</span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>fit_social <span class="op">=</span> pd.read_csv(file_social, skiprows<span class="op">=</span><span class="dv">6</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="4b529d5a" class="cell" data-execution_count="6">
+<div id="0bcad116" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#sort into counties</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>fit_le_counties <span class="op">=</span> fit_lawenforcement[fit_lawenforcement[<span class="st">"Governments/$ Dollars"</span>].<span class="bu">str</span>.endswith(<span class="st">"County"</span>, na<span class="op">=</span><span class="va">False</span>)]</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -372,7 +372,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co">#39 counties total in WA</span></span>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co">#len(fit_social_counties) #output is 39!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="851d0bd7" class="cell" data-execution_count="7">
+<div id="96816fbe" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#cleaning dollar values in the data</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>fit_le_counties[<span class="st">"2025"</span>] <span class="op">=</span> (fit_le_counties[<span class="st">"2025"</span>]</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">str</span>.replace(<span class="st">"$"</span>, <span class="st">""</span>, regex<span class="op">=</span><span class="va">False</span>)</span>
@@ -389,7 +389,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="do-counties-spend-more-on-law-enforcement-activities-or-social-services-on-average" class="level3">
 <h3 class="anchored" data-anchor-id="do-counties-spend-more-on-law-enforcement-activities-or-social-services-on-average">4. Do counties spend more on law enforcement activities or social services, on average?</h3>
-<div id="f893b550" class="cell" data-execution_count="8">
+<div id="7e6da120" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#dropping the columns that I don't want to be present in the eventual joined df</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>fit_le_counties <span class="op">=</span> fit_le_counties[[<span class="st">"Governments/$ Dollars"</span>, <span class="st">"2025"</span>]]</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -414,7 +414,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>In 2025, Washington counties spent an average of $24,960,060 on law enforcement and $65,967,350 on social services.</p>
 <p>Now I am joining together the spending data, crime data, and population data.</p>
-<div id="05c95de8" class="cell" data-execution_count="9">
+<div id="189a8fb8" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#population data</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>file_pop <span class="op">=</span> here(<span class="st">"projects/wa-state-police-social-spending/_data/populations.csv"</span>)</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>population <span class="op">=</span> pd.read_csv(file_pop)</span>
@@ -434,7 +434,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="co">#population</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="63049b08" class="cell" data-execution_count="10">
+<div id="c9ad6b30" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#joining crime, spending, and population dfs</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>county_data_2025 <span class="op">=</span> (fit_le_counties</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    .merge(fit_social_counties, on<span class="op">=</span><span class="st">"County"</span>, how<span class="op">=</span><span class="st">"outer"</span>)</span>
@@ -448,7 +448,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="do-counties-with-higher-police-spending-have-more-offenses" class="level3">
 <h3 class="anchored" data-anchor-id="do-counties-with-higher-police-spending-have-more-offenses">5. Do counties with higher police spending have more offenses?</h3>
-<div id="d4fa869c" class="cell" data-execution_count="11">
+<div id="1556ae31" class="cell" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#dropping the 4 counties with missing spending data</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>plot <span class="op">=</span> county_data_2025[[<span class="st">"Law Enforcement Spending"</span>, <span class="st">"Total Offenses"</span>]].dropna()</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -477,7 +477,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="whats-the-crime-rate-in-each-washington-state-county" class="level3">
 <h3 class="anchored" data-anchor-id="whats-the-crime-rate-in-each-washington-state-county">6. What’s the crime rate in each Washington state county?</h3>
-<div id="d6a0d669" class="cell" data-execution_count="12">
+<div id="87fd85bf" class="cell" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#calculating crime rate (crime rate = numnber of crimes per 100k people)</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>county_data_2025[<span class="st">"Offenses Per 100k (crime rate)"</span>] <span class="op">=</span> (county_data_2025[<span class="st">"Total Offenses"</span>] <span class="op">/</span> county_data_2025[<span class="st">"2025 Population"</span>]) <span class="op">*</span> <span class="dv">100000</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -489,7 +489,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="do-counties-with-higher-crime-rates-have-more-law-enforcement-spending" class="level3">
 <h3 class="anchored" data-anchor-id="do-counties-with-higher-crime-rates-have-more-law-enforcement-spending">7. Do counties with higher crime rates have more law enforcement spending?</h3>
-<div id="6f5b98ee" class="cell" data-execution_count="13">
+<div id="bb077447" class="cell" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#per capita spending</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>county_data_2025[<span class="st">"Law Enforcement Spending Per Capita"</span>] <span class="op">=</span> (county_data_2025[<span class="st">"Law Enforcement Spending"</span>] <span class="op">/</span> county_data_2025[<span class="st">"2025 Population"</span>])</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -497,7 +497,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co">#county_data_2025</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="1bf8d842" class="cell" data-execution_count="14">
+<div id="39251a71" class="cell" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#scatterplot</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>plot2 <span class="op">=</span> county_data_2025[[<span class="st">"Offenses Per 100k (crime rate)"</span>, <span class="st">"Law Enforcement Spending Per Capita"</span>]].dropna()</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -523,7 +523,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>There is a weak relationship between crime rates and law enforcement spending per capita. The line of best fit is very slightly negatively sloped. Counties are widely dispersed around the line of best fit, which suggests that counties with higher crime rates do not always spend more per capita on law enforcement. Some counties stand out on this plot as they have high per capita law enforcement spending relative to the rest of the state’s counties.</p>
-<div id="d3fe4cac" class="cell" data-execution_count="15">
+<div id="129b8a9e" class="cell" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#correlation coefficient</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>plot2[<span class="st">"Offenses Per 100k (crime rate)"</span>].corr(plot2[<span class="st">"Law Enforcement Spending Per Capita"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
@@ -534,7 +534,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="do-counties-with-higher-crime-rates-have-more-social-spending" class="level3">
 <h3 class="anchored" data-anchor-id="do-counties-with-higher-crime-rates-have-more-social-spending">Do counties with higher crime rates have more social spending?</h3>
-<div id="46264e25" class="cell" data-execution_count="16">
+<div id="07dfbec5" class="cell" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#scatterplot</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>plot3 <span class="op">=</span> county_data_2025[[<span class="st">"Offenses Per 100k (crime rate)"</span>, <span class="st">"Social Spending Per Capita"</span>]].dropna()</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -560,7 +560,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>There is a negative relationship between crime rates and social spending per capita. The line of best fit is negatively sloped. Counties with higher crime rates appear to generally spend less per capita on social services. There is a lot of variation among counties which suggests that crime rates alone do not explain differences in social spending.</p>
-<div id="90c17e52" class="cell" data-execution_count="17">
+<div id="4c252da2" class="cell" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#correlation coefficient</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>plot3[<span class="st">"Offenses Per 100k (crime rate)"</span>].corr(plot3[<span class="st">"Social Spending Per Capita"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
@@ -571,11 +571,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="do-counties-with-higher-law-enforcement-spending-have-lower-violent-crime-rates" class="level3">
 <h3 class="anchored" data-anchor-id="do-counties-with-higher-law-enforcement-spending-have-lower-violent-crime-rates">8. Do counties with higher law enforcement spending have lower violent crime rates?</h3>
-<div id="8a044bfb" class="cell" data-execution_count="18">
+<div id="4f820b03" class="cell" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">#calculating violent crime rate</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>county_data_2025[<span class="st">"Violent Offenses Per 100k (crime rate)"</span>] <span class="op">=</span> (county_data_2025[<span class="st">"Violent"</span>] <span class="op">/</span> county_data_2025[<span class="st">"2025 Population"</span>]) <span class="op">*</span> <span class="dv">100000</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="025fb537" class="cell" data-execution_count="19">
+<div id="78635a97" class="cell" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>plot4 <span class="op">=</span> county_data_2025[[<span class="st">"Law Enforcement Spending Per Capita"</span>, <span class="st">"Violent Offenses Per 100k (crime rate)"</span>]].dropna()</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> plot4[<span class="st">"Law Enforcement Spending Per Capita"</span>]</span>
@@ -600,7 +600,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>There is a positive relationship between law enforcement spending per capita and violent crime rates, which challenged my assumption that greater spending would be associated with lower violent crime. There is an extreme outlier in the upper right corner of the plot, which appears to be influencing the relationship.</p>
-<div id="de1f1a76" class="cell" data-execution_count="20">
+<div id="288dc845" class="cell" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#identify the outlier</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>county_data_2025.loc[county_data_2025[<span class="st">"Violent Offenses Per 100k (crime rate)"</span>].idxmax()]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
@@ -622,7 +622,7 @@ Name: 11, dtype: object</code></pre>
 </section>
 <section id="do-counties-with-higher-social-spending-have-lower-violent-crime-rates" class="level3">
 <h3 class="anchored" data-anchor-id="do-counties-with-higher-social-spending-have-lower-violent-crime-rates">Do counties with higher social spending have lower violent crime rates?</h3>
-<div id="458d14c9" class="cell" data-execution_count="21">
+<div id="9ae55c29" class="cell" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>plot5 <span class="op">=</span> county_data_2025[[<span class="st">"Social Spending Per Capita"</span>, <span class="st">"Violent Offenses Per 100k (crime rate)"</span>]].dropna()</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> plot5[<span class="st">"Social Spending Per Capita"</span>]</span>

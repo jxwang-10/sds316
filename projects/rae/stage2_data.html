@@ -286,7 +286,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="research-question" class="level3">
 <h3 class="anchored" data-anchor-id="research-question">Research Question</h3>
 <p>My initial research question is very specific <em>“Would prisoner reallocation have changed the distribution of possible legal maps and therefore partisan outcomes in Texas during the 2020 redistricting cycle?”</em> This question is motivated by research done with a professor in the mathematics department developing a new fairness baseline for redistricting. The analysis below was done to better understand the counterfactual data that I am working with before I conduct my formal analysis which will involve using the GerryChain package to sample from the universe of possible maps.</p>
-<div id="b418ab2f" class="cell" data-execution_count="1">
+<div id="4546d44d" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -319,7 +319,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="loading-the-data" class="level2">
 <h2 class="anchored" data-anchor-id="loading-the-data">Loading the Data</h2>
-<div id="8f49f572" class="cell" data-execution_count="2">
+<div id="7d2723af" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df_dist <span class="op">=</span> pd.read_excel(<span class="st">'data/Texas_district_reallocation_results.xlsx'</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df_block <span class="op">=</span> pd.read_csv(<span class="st">'data/Texas_block_returning_data.csv'</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -470,7 +470,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="01cf8fe9" class="cell" data-execution_count="3">
+<div id="ed587610" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#this is the same results as above but broken down by block group </span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df_block.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
@@ -587,7 +587,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="first-question-change-in-population" class="level2">
 <h2 class="anchored" data-anchor-id="first-question-change-in-population">First question: Change in population</h2>
 <p>I notice there’s a column in the districts dataset that examines the change in total population, and the change disaggregated by racial group. What’s the average change in the House Districts’ total populations?</p>
-<div id="e6dee115" class="cell" data-execution_count="4">
+<div id="14e03af8" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#on average districts change by 1,211 people BUT this tells me nothing about whether we've lost or gained </span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_dist[<span class="st">'changepop'</span>].<span class="bu">abs</span>().aggregate(<span class="st">'mean'</span>))</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -604,7 +604,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="question-1.5-of-the-districts-that-ended-up-gaining-individuals-what-was-the-average-gain" class="level2">
 <h2 class="anchored" data-anchor-id="question-1.5-of-the-districts-that-ended-up-gaining-individuals-what-was-the-average-gain">Question 1.5: Of the districts that ended up gaining individuals, what was the average gain?</h2>
-<div id="a640da80" class="cell" data-execution_count="5">
+<div id="4c05aced" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df_dist[df_dist[<span class="st">'changepop'</span>]<span class="op">&gt;</span><span class="dv">0</span>][<span class="st">'changepop'</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>np.float64(763.6982107563026)</code></pre>
@@ -616,7 +616,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="second-question-successful-reallocation">Second question: Successful reallocation?</h2>
 <p>How many people were successfully reallocated?</p>
 <p>Let’s try to subtract the total population added to districts from the total removed from districts. This should tell us how many incarcerated individuals were removed but never actually reallocated.</p>
-<div id="1add1831" class="cell" data-execution_count="6">
+<div id="52ae89e9" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>total_added <span class="op">=</span> df_dist[df_dist[<span class="st">'changepop'</span>]<span class="op">&gt;</span><span class="dv">0</span>][<span class="st">'changepop'</span>].<span class="bu">sum</span>()</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>total_lost <span class="op">=</span> df_dist[df_dist[<span class="st">'changepop'</span>]<span class="op">&lt;</span><span class="dv">0</span>][<span class="st">'changepop'</span>].<span class="bu">sum</span>()</span>
@@ -634,7 +634,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="third-question-change-in-population-by-demographic" class="level2">
 <h2 class="anchored" data-anchor-id="third-question-change-in-population-by-demographic">Third question: Change in population by demographic</h2>
-<div id="e36d44ce" class="cell" data-execution_count="7">
+<div id="0d7de237" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>it_list <span class="op">=</span> [<span class="st">'changew'</span>,<span class="st">'changeb'</span>, <span class="st">'changel'</span>, <span class="st">'changeo'</span>]</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> it_list: </span>
@@ -681,7 +681,7 @@ Gain or Lose? 1.0</code></pre>
 </section>
 <section id="fourth-question-now-im-curious-how-much-each-districts-total-population-is-under-or-over-the-actual-population-baseline-for-a-single-congressional-district-in-tx" class="level2">
 <h2 class="anchored" data-anchor-id="fourth-question-now-im-curious-how-much-each-districts-total-population-is-under-or-over-the-actual-population-baseline-for-a-single-congressional-district-in-tx">Fourth question: Now I’m curious how much each districts total population is under or over the actual population baseline for a single congressional district in TX</h2>
-<div id="add479c6" class="cell" data-execution_count="8">
+<div id="518dd0f9" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>ideal <span class="op">=</span> <span class="dv">194303</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>df_dist[<span class="st">'dif_from_ideal'</span>] <span class="op">=</span> df_dist[<span class="st">'adjtotal'</span>] <span class="op">-</span> ideal</span>
@@ -986,11 +986,11 @@ Gain or Lose? 1.0</code></pre>
 <h2 class="anchored" data-anchor-id="fifth-question-geographic-patterns">Fifth question: Geographic patterns?</h2>
 <p>Since gerrymandering is inherently geographic, I’m curious whether there are geographic patterns to the districts that gain vs.&nbsp;lose population after adjustment. This should be the same thing as finding whether the adjusted districts are too big (i.e., population was gained) or too small (i.e., population was lost).</p>
 <p>First I need to get the Texas house district shape files to plot.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<div id="f79c4aca" class="cell" data-execution_count="9">
+<div id="ffcae165" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#importing the 2022 HD shapes (this should be pre- recent mid-decade redistricting)</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>district_shape <span class="op">=</span> gpd.read_file(<span class="st">'data/TX-2022-State-House-district-shapes-no-landmarks.geojson'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="71c067a2" class="cell" data-execution_count="10">
+<div id="9025afc0" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#switching the coordinate system for plotting</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>district_shape.crs</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1014,7 +1014,7 @@ Datum: North American Datum 1983
 </div>
 </div>
 <p>Why do I get two different results for the plots below? Probably because toobig and toosmall variables are based on the legal definition of being too big or small.</p>
-<div id="065e6dd9" class="cell" data-execution_count="11">
+<div id="ee3cf07e" class="cell" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df_dist_wshape <span class="op">=</span> pd.concat([district_shape[[<span class="st">'geometry'</span>]],df_dist], axis <span class="op">=</span> <span class="dv">1</span>) </span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1029,7 +1029,7 @@ Datum: North American Datum 1983
 </div>
 </div>
 </div>
-<div id="a72ba9c6" class="cell" data-execution_count="12">
+<div id="1dd5626b" class="cell" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>color_map <span class="op">=</span> {<span class="op">-</span><span class="fl">1.0</span>: <span class="st">'blue'</span>, <span class="fl">1.0</span>: <span class="st">'red'</span>, <span class="fl">0.0</span>: <span class="st">'green'</span>}</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>color <span class="op">=</span> df_dist_wshape[<span class="st">'toobig'</span>].<span class="bu">map</span>(color_map)</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1042,7 +1042,7 @@ Datum: North American Datum 1983
 </div>
 </div>
 </div>
-<div id="4afb7349" class="cell" data-execution_count="13">
+<div id="b272f49d" class="cell" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>df_dist_wshape[<span class="st">'toobig'</span>].value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>toobig
@@ -1052,11 +1052,11 @@ Name: count, dtype: int64</code></pre>
 </div>
 </div>
 <p>Okay, so I assume that some districts can be too big, too small, or neither, but because toobig and toosmall are binary indicators, I need to make a column that accounts for all three options.</p>
-<div id="e7e8713f" class="cell" data-execution_count="14">
+<div id="a5de1bf8" class="cell" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>df_dist_wshape[<span class="st">'size'</span>] <span class="op">=</span> np.where(df_dist_wshape[<span class="st">'toobig'</span>] <span class="op">==</span> <span class="fl">1.0</span>, <span class="st">'big'</span>,</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>np.where(df_dist_wshape[<span class="st">'toosmall'</span>] <span class="op">==</span> <span class="fl">1.0</span>, <span class="st">'small'</span>, <span class="st">'neither'</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="f267b51e" class="cell" data-execution_count="15">
+<div id="51c2dd74" class="cell" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>df_dist_wshape.head()</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>color_map <span class="op">=</span> {<span class="st">'neither'</span>: <span class="st">'lightgrey'</span>, <span class="st">'big'</span>: <span class="st">'red'</span>, <span class="st">'small'</span>: <span class="st">'orange'</span>}</span>
@@ -1076,10 +1076,10 @@ Name: count, dtype: int64</code></pre>
 <section id="sixth-question-racial-demographics" class="level2">
 <h2 class="anchored" data-anchor-id="sixth-question-racial-demographics">Sixth question: Racial Demographics</h2>
 <p>Now lets look at the demographic breakdowns of these counties; specifically the percent of the population that is black.</p>
-<div id="d3350474" class="cell" data-execution_count="16">
+<div id="26dfc868" class="cell" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>tx_dist_info <span class="op">=</span> pd.read_csv(<span class="st">'data/district-data.csv'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="c22c8eeb" class="cell" data-execution_count="17">
+<div id="43c63c9d" class="cell" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>rel_districts <span class="op">=</span> <span class="bu">list</span>(df_dist_wshape[df_dist_wshape[<span class="st">'size'</span>] <span class="op">!=</span> <span class="st">'neither'</span>][<span class="st">'district_h'</span>])</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co">#texas demo info is by district so should map perfectly!</span></span>
@@ -1088,7 +1088,7 @@ Name: count, dtype: int64</code></pre>
 <span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>tx_dist_info <span class="op">=</span> tx_dist_info.drop(<span class="dv">0</span>, axis <span class="op">=</span> <span class="dv">0</span> ).reset_index()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="190c5804" class="cell" data-execution_count="18">
+<div id="ea775e8e" class="cell" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>df_150 <span class="op">=</span> pd.concat([tx_dist_info, df_dist_wshape], axis <span class="op">=</span> <span class="dv">1</span>)</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>df_150.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
@@ -1250,7 +1250,7 @@ Name: count, dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="8cb58f15" class="cell" data-execution_count="19">
+<div id="8cdd3a7b" class="cell" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co">#lets check that the T_20 CENS total is the same as/close to as the pre-reallocation totals</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_150.columns)</span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>df_150[[<span class="st">'T_20_CENS_Total'</span>, <span class="st">'total'</span>]]</span>
@@ -1269,7 +1269,7 @@ Name: count, dtype: int64</code></pre>
       dtype='str')</code></pre>
 </div>
 </div>
-<div id="fd413dcf" class="cell" data-execution_count="20">
+<div id="54830dce" class="cell" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>df_150[<span class="st">'CENS_total_diff_pct'</span>] <span class="op">=</span> df_150[<span class="st">'CENS_total_diff'</span>]<span class="op">/</span>df_150[<span class="st">'total'</span>]</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>df_150[<span class="st">'CENS_total_diff_pct'</span>].sort_values()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1289,7 +1289,7 @@ Name: CENS_total_diff_pct, Length: 151, dtype: float64</code></pre>
 </div>
 </div>
 <p>There is no difference between the 2020 Census totals and the totals in the adjusted data!</p>
-<div id="8f511d94" class="cell" data-execution_count="21">
+<div id="588e130f" class="cell" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tx_dist_info.index)</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_dist_wshape.index)</span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>df_150.head()</span>
@@ -1324,7 +1324,7 @@ RangeIndex(start=0, stop=151, step=1)</code></pre>
 <section id="question-6.5-hispanic-population" class="level3">
 <h3 class="anchored" data-anchor-id="question-6.5-hispanic-population">Question 6.5: Hispanic Population?</h3>
 <p>Since TX has a large Hispanic population, what about the Hispanic demographic?</p>
-<div id="6a445ed8" class="cell" data-execution_count="22">
+<div id="b9f0b9f3" class="cell" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print(tx_dist_info.index)</span></span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="co"># print(df_dist_wshape.index)</span></span>
 <span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="co"># df_150.head()</span></span>
@@ -1358,7 +1358,7 @@ RangeIndex(start=0, stop=151, step=1)</code></pre>
 <section id="seventh-question-prison-locations" class="level2">
 <h2 class="anchored" data-anchor-id="seventh-question-prison-locations">Seventh question: Prison Locations</h2>
 <p>Lets plot the correctional facilities in TX. I think I know which districts in which they might fall…</p>
-<div id="458862fc" class="cell" data-execution_count="23">
+<div id="b2f5e4c6" class="cell" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># #five largest state run prisons in texas, 3 seem to be in the same place</span></span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="co"># adresses = pd.Series(['2661 FM 2054, Tennessee Colony, TX 75884', '2101 FM 369, Iowa Park, TX 76367', '9601 Spur 591, Amarillo, TX 79107', '1391 FM 3328, Tennessee Colony, TX 75880', '2664 FM 2054, Tennessee Colony, TX 75886'])</span></span>
 <span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1371,7 +1371,7 @@ RangeIndex(start=0, stop=151, step=1)</code></pre>
 <span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>prison_gdf <span class="op">=</span> gpd.read_file(<span class="st">'data/TX_prisons.geojson'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="1a77aacb" class="cell" data-execution_count="24">
+<div id="a2a598d7" class="cell" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>df_150 <span class="op">=</span> df_150.set_geometry(<span class="st">'geometry'</span>, crs <span class="op">=</span> <span class="dv">3081</span>)</span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>fig, axis <span class="op">=</span> plt.subplots()</span>
@@ -1396,7 +1396,7 @@ RangeIndex(start=0, stop=151, step=1)</code></pre>
 </section>
 <section id="eighth-question-the-plots-above-used-the-pct_black-with-the-unadjusted-totalscensus-counts.-do-the-results-change-when-we-ue-the-adjusted-data" class="level2">
 <h2 class="anchored" data-anchor-id="eighth-question-the-plots-above-used-the-pct_black-with-the-unadjusted-totalscensus-counts.-do-the-results-change-when-we-ue-the-adjusted-data">Eighth question: The plots above used the pct_black with the unadjusted totals/Census counts. Do the results change when we ue the adjusted data?</h2>
-<div id="42a09ef9" class="cell" data-execution_count="25">
+<div id="09578dcd" class="cell" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>fig, ax2 <span class="op">=</span> plt.subplots()</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>df_150[<span class="st">'adj_pct_black'</span>] <span class="op">=</span> df_150[<span class="st">'adjblack'</span>] <span class="op">/</span> df_150[<span class="st">'adjtotal'</span>]</span>
@@ -1420,12 +1420,12 @@ RangeIndex(start=0, stop=151, step=1)</code></pre>
 </section>
 <section id="ninth-question-what-about-partisanship-are-there-partisan-patterns-to-the-way-in-which-people-are-distributed" class="level2">
 <h2 class="anchored" data-anchor-id="ninth-question-what-about-partisanship-are-there-partisan-patterns-to-the-way-in-which-people-are-distributed">Ninth question: What about partisanship? Are there partisan patterns to the way in which people are distributed?</h2>
-<div id="0ad36491" class="cell" data-execution_count="26">
+<div id="f5cf8ae5" class="cell" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>df_elect <span class="op">=</span> pd.read_csv(<span class="st">'data/district-election-data.csv'</span>)[[<span class="st">'E_16-20_COMP_Total'</span>, <span class="st">'E_16-20_COMP_Dem'</span>, <span class="st">'E_16-20_COMP_Rep'</span>]]</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>df_elect <span class="op">=</span> df_elect.drop(<span class="dv">0</span>, axis <span class="op">=</span> <span class="dv">0</span>).reset_index()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="804312ad" class="cell" data-execution_count="27">
+<div id="7f2d10fb" class="cell" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>df_elect.head()</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>df_elect_shape <span class="op">=</span> pd.concat([df_elect, df_dist_wshape], axis <span class="op">=</span> <span class="dv">1</span>)</span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1458,7 +1458,7 @@ RangeIndex(start=0, stop=151, step=1)</code></pre>
 <section id="tenth-question-whats-the-distribution-of-legal-maps-after-reallocation" class="level3">
 <h3 class="anchored" data-anchor-id="tenth-question-whats-the-distribution-of-legal-maps-after-reallocation">Tenth question: What’s the distribution of legal maps after reallocation?</h3>
 <p>Below I’m attempting to run the Flip Chain MCMC method using Gerrychain. This seems to work on the PA data so for stage 3. During the next stage, I’ll try to do this with Texas 2020 VTD data.</p>
-<div id="cfaaa02b" class="cell" data-execution_count="28">
+<div id="7c3ffe7b" class="cell" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>pa_chain <span class="op">=</span> MarkovChain(</span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>    total_steps<span class="op">=</span><span class="dv">40</span>,</span>
 <span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>    rng<span class="op">=</span><span class="dv">2024</span>,</span>
@@ -1494,7 +1494,7 @@ RangeIndex(start=0, stop=151, step=1)</code></pre>
 <span id="cb38-33"><a href="#cb38-33" aria-hidden="true" tabindex="-1"></a>pa_chain.add_constraint(contiguous)</span>
 <span id="cb38-34"><a href="#cb38-34" aria-hidden="true" tabindex="-1"></a>pa_chain.acceptance_fn <span class="op">=</span> always_accept</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="977bf6eb" class="cell" data-execution_count="29">
+<div id="8e310639" class="cell" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> cut_edges_length(partition):</span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">len</span>(partition[<span class="st">"cut_edges"</span>])</span>
 <span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1502,7 +1502,7 @@ RangeIndex(start=0, stop=151, step=1)</code></pre>
 <span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>    constraints.UpperBound(cut_edges_length, <span class="dv">2</span> <span class="op">*</span> <span class="bu">len</span>(pa_chain.initial_partition[<span class="st">"cut_edges"</span>]))</span>
 <span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="052fb3e3" class="cell" data-execution_count="30">
+<div id="db39952b" class="cell" data-execution_count="30">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pandas.DataFrame(</span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">sorted</span>(partition[<span class="st">"SEN12"</span>].percents(<span class="st">"Democratic"</span>))</span>
 <span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> partition <span class="kw">in</span> pa_chain.with_progress_bar()</span>
@@ -1514,7 +1514,7 @@ RangeIndex(start=0, stop=151, step=1)</code></pre>
 <span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id":"1ef3633735d7473795bb8f7323b5b31f","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
+{"model_id":"e45ea168e87f415985aa5b82d74089cf","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
 </script>
 </div>
 <div class="cell-output cell-output-display">
@@ -1542,7 +1542,7 @@ RangeIndex(start=0, stop=151, step=1)</code></pre>
 </ol>
 </section></div></main> <!-- /main -->
 <script type="application/vnd.jupyter.widget-state+json">
-{"state":{"0d6c565b973446a78ced5fb1a335db2b":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":null,"justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":null}},"1ef3633735d7473795bb8f7323b5b31f":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"HBoxModel","state":{"_dom_classes":[],"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"HBoxModel","_view_count":null,"_view_module":"@jupyter-widgets/controls","_view_module_version":"2.0.0","_view_name":"HBoxView","box_style":"","children":["IPY_MODEL_b87bba2b513143bfa8600ac102d5d0fc","IPY_MODEL_e2cb574f2c4744de8678bfc1e2d03492","IPY_MODEL_846927bc4cdc4993b595dbc9244458ee"],"layout":"IPY_MODEL_ecdc821772024a4c824d97aa3cb1ecc7","tabbable":null,"tooltip":null}},"2ad6615330b14516ae2f058b84dabfe4":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"HTMLStyleModel","state":{"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"HTMLStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","background":null,"description_width":"","font_size":null,"text_color":null}},"444c8586ff3948d984ee28665ecad784":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":null,"justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":null}},"846927bc4cdc4993b595dbc9244458ee":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"HTMLModel","state":{"_dom_classes":[],"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"HTMLModel","_view_count":null,"_view_module":"@jupyter-widgets/controls","_view_module_version":"2.0.0","_view_name":"HTMLView","description":"","description_allow_html":false,"layout":"IPY_MODEL_444c8586ff3948d984ee28665ecad784","placeholder":"​","style":"IPY_MODEL_2ad6615330b14516ae2f058b84dabfe4","tabbable":null,"tooltip":null,"value":" 40/40 [00:00&lt;00:00, 437.24it/s]"}},"8ffee7cebb1948778a5fe25a5cad5519":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"ProgressStyleModel","state":{"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"ProgressStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","bar_color":null,"description_width":""}},"b4d6c9847003404384d28b2a08905624":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":null,"justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":null}},"b87bba2b513143bfa8600ac102d5d0fc":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"HTMLModel","state":{"_dom_classes":[],"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"HTMLModel","_view_count":null,"_view_module":"@jupyter-widgets/controls","_view_module_version":"2.0.0","_view_name":"HTMLView","description":"","description_allow_html":false,"layout":"IPY_MODEL_0d6c565b973446a78ced5fb1a335db2b","placeholder":"​","style":"IPY_MODEL_e38723f26df84ea48e5b5a3f5fe2940e","tabbable":null,"tooltip":null,"value":"100%"}},"e2cb574f2c4744de8678bfc1e2d03492":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"FloatProgressModel","state":{"_dom_classes":[],"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"FloatProgressModel","_view_count":null,"_view_module":"@jupyter-widgets/controls","_view_module_version":"2.0.0","_view_name":"ProgressView","bar_style":"success","description":"","description_allow_html":false,"layout":"IPY_MODEL_b4d6c9847003404384d28b2a08905624","max":40,"min":0,"orientation":"horizontal","style":"IPY_MODEL_8ffee7cebb1948778a5fe25a5cad5519","tabbable":null,"tooltip":null,"value":40}},"e38723f26df84ea48e5b5a3f5fe2940e":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"HTMLStyleModel","state":{"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"HTMLStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","background":null,"description_width":"","font_size":null,"text_color":null}},"ecdc821772024a4c824d97aa3cb1ecc7":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":null,"justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":null}}},"version_major":2,"version_minor":0}
+{"state":{"085b3b9c916a4340a237c772606dd05e":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"HTMLStyleModel","state":{"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"HTMLStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","background":null,"description_width":"","font_size":null,"text_color":null}},"0ee3bb704dfb4ca09b3553335c92614d":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"ProgressStyleModel","state":{"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"ProgressStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","bar_color":null,"description_width":""}},"3d19353dec2143a59e5800844ddec6d4":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"HTMLModel","state":{"_dom_classes":[],"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"HTMLModel","_view_count":null,"_view_module":"@jupyter-widgets/controls","_view_module_version":"2.0.0","_view_name":"HTMLView","description":"","description_allow_html":false,"layout":"IPY_MODEL_a6ad3a556f3d4bf189aaf613a21a6a37","placeholder":"​","style":"IPY_MODEL_cb11e65003bd4f36bd14c52ef2b88a84","tabbable":null,"tooltip":null,"value":" 40/40 [00:00&lt;00:00, 567.40it/s]"}},"7b3601c57d5648148bec1bbb71ef3c76":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"HTMLModel","state":{"_dom_classes":[],"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"HTMLModel","_view_count":null,"_view_module":"@jupyter-widgets/controls","_view_module_version":"2.0.0","_view_name":"HTMLView","description":"","description_allow_html":false,"layout":"IPY_MODEL_a76cce913e884d7fbdb5b69ae192fd38","placeholder":"​","style":"IPY_MODEL_085b3b9c916a4340a237c772606dd05e","tabbable":null,"tooltip":null,"value":"100%"}},"90ba1c6e03f54f7099b39aaa7b024b43":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":null,"justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":null}},"a5e9a8f194bb4b9db69e4452c8996480":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":null,"justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":null}},"a6ad3a556f3d4bf189aaf613a21a6a37":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":null,"justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":null}},"a76cce913e884d7fbdb5b69ae192fd38":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":null,"justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":null}},"cb11e65003bd4f36bd14c52ef2b88a84":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"HTMLStyleModel","state":{"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"HTMLStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","background":null,"description_width":"","font_size":null,"text_color":null}},"d6d6636e2f6e40fda801a2b3b7ced626":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"FloatProgressModel","state":{"_dom_classes":[],"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"FloatProgressModel","_view_count":null,"_view_module":"@jupyter-widgets/controls","_view_module_version":"2.0.0","_view_name":"ProgressView","bar_style":"success","description":"","description_allow_html":false,"layout":"IPY_MODEL_a5e9a8f194bb4b9db69e4452c8996480","max":40,"min":0,"orientation":"horizontal","style":"IPY_MODEL_0ee3bb704dfb4ca09b3553335c92614d","tabbable":null,"tooltip":null,"value":40}},"e45ea168e87f415985aa5b82d74089cf":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"HBoxModel","state":{"_dom_classes":[],"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"HBoxModel","_view_count":null,"_view_module":"@jupyter-widgets/controls","_view_module_version":"2.0.0","_view_name":"HBoxView","box_style":"","children":["IPY_MODEL_7b3601c57d5648148bec1bbb71ef3c76","IPY_MODEL_d6d6636e2f6e40fda801a2b3b7ced626","IPY_MODEL_3d19353dec2143a59e5800844ddec6d4"],"layout":"IPY_MODEL_90ba1c6e03f54f7099b39aaa7b024b43","tabbable":null,"tooltip":null}}},"version_major":2,"version_minor":0}
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
