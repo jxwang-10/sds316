@@ -362,7 +362,7 @@ window.Quarto = {
 <p>An analysis of gender showed a dataset containing mostly men.</p>
 <section id="gender" class="level4">
 <h4 class="anchored" data-anchor-id="gender">Gender</h4>
-<div id="eb84e9b8" class="cell" data-execution_count="1">
+<div id="80e65842" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -376,7 +376,7 @@ window.Quarto = {
 <section id="race" class="level4">
 <h4 class="anchored" data-anchor-id="race">Race</h4>
 <p>In the data’s codebook, these race has been coded numerically: <code>0 M Do Not Know; NA 1 White 2 Black 3 Native American 4 Asian-Pacific Il 5 Hispanic 6 Other</code></p>
-<div id="e2661652" class="cell" data-execution_count="2">
+<div id="0afafb26" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -389,7 +389,7 @@ window.Quarto = {
 </section>
 <section id="methods-of-execution" class="level4">
 <h4 class="anchored" data-anchor-id="methods-of-execution">Methods of Execution</h4>
-<div id="84515a79" class="cell" data-execution_count="3">
+<div id="e24c4138" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -407,7 +407,7 @@ window.Quarto = {
 <p>Explain your results and how you came to the conclusion that you have now. For example, you might show a heatmap…</p>
 <section id="heatmap" class="level3">
 <h3 class="anchored" data-anchor-id="heatmap">Heatmap…</h3>
-<div id="7c21baa5" class="cell" data-execution_count="4">
+<div id="36a6fad7" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -418,7 +418,7 @@ window.Quarto = {
 </div>
 </div>
 <p><em>NOTE</em>: This heatmap is fine, but hard to read. When I have an opportunity to polish it (hint, hint) this is one of the fixes I might make.</p>
-<div id="13d34a98" class="cell" data-execution_count="5">
+<div id="a98f6b65" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> chi2_contingency</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Remember...chi-Square requires raw counts, not percentages!</span></span>
@@ -440,7 +440,7 @@ P-value: 0.00000</code></pre>
 <section id="result-1-compensation-for-execution" class="level2">
 <h2 class="anchored" data-anchor-id="result-1-compensation-for-execution">Result 1: Compensation for Execution</h2>
 <p>This is a paragraph contextualizing the information I’m about to show the reader. In this case, I might talk about the end of chattel slavery in the US, and how chattel slavery put a literal dollar value on each human being. This dataset reveals that some people were killed by the state for a crime, <em>and</em> the state compensated the human trafficker/enslaver for the “loss” of this value <span class="citation" data-cites="Madeo2026Nov">(<a href="#ref-Madeo2026Nov" role="doc-biblioref">Madeo 2026</a>)</span>.</p>
-<div id="c1a76623" class="cell" data-execution_count="6">
+<div id="982b9756" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Define the columns we want to extract and what we want to rename them to</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>column_mapping <span class="op">=</span> {</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'V7'</span>: <span class="st">'Name'</span>,</span>
@@ -483,7 +483,7 @@ Total compensated cases found: 296
 <section id="result-2-compensation-was-not-linked-to-a-particular-crime" class="level3">
 <h3 class="anchored" data-anchor-id="result-2-compensation-was-not-linked-to-a-particular-crime">Result 2: Compensation was not linked to a particular crime</h3>
 <p>I’d include more text here about what this result <em>means</em>. I’d ask myself what I’m trying to have my readers undesrtand and why I’m showing these results in particular</p>
-<div id="507e4ce7" class="cell" data-execution_count="7">
+<div id="47513fc3" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Create a dictionary to map the numeric crime codes (V10) to their text descriptions</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>crime_map <span class="op">=</span> {</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'1'</span>: <span class="st">'Murder'</span>,</span>
@@ -524,7 +524,7 @@ Not Recorded / Unknown                          185
 <section id="result-3-17-of-executions-resulted-in-compensation-for-enslavers" class="level3">
 <h3 class="anchored" data-anchor-id="result-3-17-of-executions-resulted-in-compensation-for-enslavers">Result 3: 17% of executions resulted in compensation for enslavers</h3>
 <p>Here’s more high level text about this result that, ideally, would include a few more citations. You are likely best off not showing the python code (unless you’re trying to make a point), so you can hide it with <code>#| echo: false</code>, just like I did above and below</p>
-<div id="49013f74" class="cell" data-execution_count="8">
+<div id="5e420c07" class="cell" data-execution_count="8">
 <div class="cell-output cell-output-stdout">
 <pre><code>Total number of executions with occupation 'Slave': 1754
 Number of those that were compensated cases: 284
